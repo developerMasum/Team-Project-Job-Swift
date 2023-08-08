@@ -1,14 +1,12 @@
 import React from 'react';
+import PaySection from '../../components/Home/PaySection';
 
 const Home = () => {
     return (
         <div>
-          <h2>Home Page : Welcome Guys !! </h2>  
-          <p>welcome </p>
-          <p>this is masum page </p>
-          <div>
-            added a file bro 
-          </div>
+          <PaySection />
+
+         
         </div>
     );
 };
