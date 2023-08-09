@@ -1,9 +1,10 @@
 import React from 'react';
+import HrDataReporting from '../../Components/Home/HrDataReporting/HrDataReporting';
 
 const Home = () => {
     return (
         <div>
-          <h2>Home Page : Welcome Guys !! </h2>  
+          <HrDataReporting />
         </div>
     );
 };
