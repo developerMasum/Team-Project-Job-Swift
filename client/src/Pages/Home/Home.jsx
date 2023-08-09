@@ -1,25 +1,21 @@
 import React from 'react';
-<<<<<<< HEAD
 import HrDataReporting from '../../Components/Home/HrDataReporting/HrDataReporting';
-=======
 import PaySection from '../../components/Home/PaySection';
 import HrPlatform from '../../components/Home/HrPlatform';
->>>>>>> 023391e51ea3638cf58556e19d65fd05447c3864
+import HeadlineBar from '../Shared/HeadlineBar';
 
 
 const Home = () => {
     return (
-        <div>
-<<<<<<< HEAD
-          <HrDataReporting />
-=======
-          {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
-         
-          <PaySection />
-          <HrPlatform></HrPlatform>
+        <div className='mt-60 lg:md:mt-20'>
+            <HeadlineBar></HeadlineBar>
+            <HrDataReporting />
+            {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
 
-         
->>>>>>> 023391e51ea3638cf58556e19d65fd05447c3864
+            <PaySection />
+            <HrPlatform></HrPlatform>
+
+
         </div>
     );
 };
