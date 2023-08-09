@@ -1,11 +1,10 @@
 import React from "react";
-
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HrPlatform = () => {
   return (
-    <div className="flex flex-wrap max-w-[1100px] mx-auto justify-between items-center">
+    <div className="flex flex-wrap max-w-[1100px] mx-auto justify-between items-center mt-8 md:mt-16">
       <div className=" w-full md:w-1/2">
         <img
           src="https://i.ibb.co/KN1FwJP/image.webp"
