@@ -25,7 +25,7 @@ const countries = [
 
 const DemoForm = () => {
   return (
-    <div className="max-w-[500px] border-[1px] bg-neutral-50 rounded-t-lg  mx-auto p-6">
+    <div className="w-full md:max-w-[500px] border-[1px] bg-neutral-50 rounded-t-lg  mx-auto md:p-6">
       <form className="space-y-4 p-6">
         <h1 className="text-primary font-[900] text-2xl text-center">
           See BambooHR in Action
@@ -57,7 +57,7 @@ const DemoForm = () => {
           className="w-full p-2 placeholder-gray-400 border rounded"
           placeholder="Company Name"
         />
-        <div className="flex space-x-2">
+        <div className="md:flex space-x-2">
           <input
             type="tel"
             className="flex-1 p-2 placeholder-gray-400 border rounded"
