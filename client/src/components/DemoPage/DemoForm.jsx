@@ -85,7 +85,7 @@ const DemoForm = () => {
             communications from BambooHR, including emails and phone calls.
             Please see our Privacy Policy to understand how BambooHR handles
             your personal information. For California residents, please click
-            here.
+            here. helo
           </p>
         </div>
         <button
