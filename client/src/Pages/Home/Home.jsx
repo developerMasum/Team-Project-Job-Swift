@@ -6,18 +6,18 @@ import HeadlineBar from '../Shared/HeadlineBar';
 
 
 const Home = () => {
-    return (
-        <div className='mt-60 lg:md:mt-20'>
-            <HeadlineBar></HeadlineBar>
-            <HrDataReporting />
-            {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
+  return (
+    <div className='mt-32 lg:md:mt-20'>
+      <HeadlineBar></HeadlineBar>
+      <HrDataReporting />
+      {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
 
-            <PaySection />
-            <HrPlatform></HrPlatform>
+      <PaySection />
+      <HrPlatform></HrPlatform>
 
 
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Home;

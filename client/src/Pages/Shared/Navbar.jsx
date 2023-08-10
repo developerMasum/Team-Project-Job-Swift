@@ -27,7 +27,7 @@ const Navbar = () => {
     // lg:md:flex justify-center 
     return (
         <>
-            <div className="flex flex-col navbar rounded-xl shadow-lg bg-base-400   bg-opacity-40  fixed mt-[-230px] lg:md:flex-row bg-base-200 lg:md:mt-[-80px] max-w-7xl mx-auto ">
+            <div className="flex flex-col navbar rounded-xl shadow-lg bg-base-400   bg-opacity-40  fixed mt-[-120px] lg:md:flex-row bg-base-200 lg:md:mt-[-80px] max-w-7xl mx-auto ">
                 <div className="flex justify-around gap-40 lg:md:navbar-start lg:md:gap-10">
                     <div className="dropdown bg-green-400">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
