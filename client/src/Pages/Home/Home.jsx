@@ -6,7 +6,7 @@ import Banner from "../../Components/Home/Banner/Banner";
 import EmployeeExperience from "../../components/Home/EmployeeExperience";
 import Slider from "../../components/Home/Slider/Slider";
 import HeadlineBar from '../Shared/HeadlineBar';
-
+import MarketPlaceIntegrate from '../../Components/Home/MarketPlaceIntegrate/MarketPlaceIntegate';
 
 const Home = () => {
   return (
@@ -26,6 +26,9 @@ const Home = () => {
 
       <div className="mt-12 mb-5">
         <EmployeeExperience />
+      </div>
+      <div className="mt-12 mb-5">
+        <MarketPlaceIntegrate />
       </div>
       {/* slider */}
       <div className="mt-12"> 

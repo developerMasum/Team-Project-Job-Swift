@@ -3,7 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
-import EmployeeExperience from "../components/Home/EmployeeExperience";
+import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
 
 const router = createBrowserRouter([
@@ -21,6 +21,9 @@ const router = createBrowserRouter([
           element:<DemoPage></DemoPage>
         },
         {
+          path:'details-marketplace',
+          element:<DetailsMarketPlaceIntegrate />
+      },{
           path:'/employee-experience',
           element: <EmployeePerformance></EmployeePerformance>
         }
