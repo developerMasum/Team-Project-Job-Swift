@@ -10,13 +10,13 @@ const HrDataReporting = () => {
         <h3 className="text-2xl md:text-3xl font-semibold text-[#00673B]">
           HR Data & Reporting
         </h3>
-        <p className="text-lg pb-5">
+        <p className="text-secondary font-semibold leading-8 md:mt-2">
           BambooHR is your one-stop shop for data management, with instant,
-          pre-built reports, automated workflows, and in-depth analytics <br /> to
+          pre-built reports, automated workflows, and in-depth analytics to
           back you up and keep you moving.
         </p>
         <Link to={"/"} className="">
-          <h4 className="text-primary text-lg md:text-xl font-semibold mt-4 md:mt-10 ">
+          <h4 className="text-primary font-bold text-base text-start md:text-start mt-2  md:mt-10 ">
             Learn More About HR Data & Reporting{" "}
             <span>
               {" "}

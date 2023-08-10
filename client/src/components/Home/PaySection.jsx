@@ -9,7 +9,7 @@ const PaySection = () => {
         <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
           Payroll, Time & Benefits
         </h2>
-        <p className="font-semibold text-secondary">
+        <p className="font-semibold text-secondary leading-8">
           BambooHR allows you to track hours worked, manage benefits enrollment,
           and run payroll all from a single platform. No more data double entry
           and manual approval processes—just easy, accurate payroll for you and
@@ -17,7 +17,7 @@ const PaySection = () => {
         </p>
 
         <Link to={"/"} className="">
-          <h3 className="text-primary text-lg md:text-xl font-semibold mt-4 md:mt-10 ">
+          <h3 className="text-primary font-bold text-base text-start md:text-start mt-2 md:mt-8 ">
             Learn More About Payroll, Time & Benefits
             <span className="ml-2">
               <FaChevronRight className="inline-block text-primary" />
