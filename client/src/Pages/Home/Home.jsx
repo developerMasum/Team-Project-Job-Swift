@@ -13,11 +13,15 @@ const Home = () => {
     <div className='mt-32 lg:md:mt-20'>
       <HeadlineBar></HeadlineBar>
       <Banner />
-      <HrDataReporting />
+      <HrPlatform></HrPlatform>
+    <div className="mt-12">
+    <HrDataReporting />
+    </div>
       {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
 
-      <PaySection />
-      <HrPlatform></HrPlatform>
+<div className="mt-12">
+<PaySection />
+</div>
 
 
       <div className="mt-12 mb-5">
