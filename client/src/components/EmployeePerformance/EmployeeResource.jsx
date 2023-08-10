@@ -10,7 +10,7 @@ const EmployeeResource = () => {
       image:
         "https://www.bamboohr.com/hr-software/media_1ec84c0925a1a7ccec48f6340930988163f39fc9b.png?width=2000&format=webply&optimize=medium",
       description:
-        "Hear from Speedway Motors’ director of people operations Betsy Grindlay, a real-life customer, on how BambooHR has helped her organization improve employee performance and company culture.",
+        "Hear from Speedway Motors’ director of people operations Betsy Grindlay, a real-life customer, on how Job Swift has helped her organization improve employee performance and company culture.",
 
       linkTag: "Watch or Read the Interview",
     },
@@ -20,7 +20,7 @@ const EmployeeResource = () => {
       image:
         "https://www.bamboohr.com/hr-software/media_1bb955a97747904098994f5542f6f7f93124841b6.png?width=2000&format=webply&optimize=medium",
       description:
-        "Tired of researching and comparing? In this short webinar packed with information and first-hand customer stories, we’ll show you how BambooHR makes the dream of all-in-one payroll, time tracking, and benefits data a reality.",
+        "Tired of researching and comparing? In this short webinar packed with information and first-hand customer stories, we’ll show you how Job Swift makes the dream of all-in-one payroll, time tracking, and benefits data a reality.",
 
       linkTag: "Download the Ebook",
     },

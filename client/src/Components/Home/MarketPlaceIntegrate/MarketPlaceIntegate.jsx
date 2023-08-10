@@ -1,34 +1,44 @@
 import React from 'react';
-import { MdArrowForwardIos } from 'react-icons/md';
+import { FaChevronRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const MarketPlaceIntegrate = () => {
-    return (
-        <div>
-            <div className="md:flex pt-20 flex-row-reverse items-center gap-12 w-9/12 mx-auto ">
-        <div className='md:w-1/2'>
-          <img src="https://www.bamboohr.com/media_13163d8538f44e479364c47dd3057531b1af2e429.png?width=2000&format=webply&optimize=medium" alt="" />
-        </div>
-        <div className="space-y-5 md:w-1/2">
-          <h3 className="text-2xl font-semibold text-[#00673B]">
+  return (
+    <div className="flex flex-wrap max-w-[1100px] mx-auto justify-between items-center mt-8 md:mt-16 px-12 md:0">
+      <div className="w-full md:w-1/2">
+        <img
+          src="https://www.bamboohr.com/media_13163d8538f44e479364c47dd3057531b1af2e429.png?width=2000&format=webply&optimize=medium"
+          alt=""
+        />
+      </div>
+      <div className="w-full  mt-6 pl-10 md:mt-0 md:w-1/2">
+        <h2 className="text-primary md:text-2xl font-bold text-xl text-center md:text-start mb-2">
           Integration Marketplace
-          </h3>
-          <p className="text-lg pb-5">
-          Simplify even more business workflows by connecting vetted, pre-built software integrations to BambooHR. Your employee data stays accurate and secure, and you have hundreds of solutions at your fingertips to help your people and your business thrive.
-          </p>
-          <Link to="/details-marketplace">
-            <h5 className="text-base text-[#00673B] font-bold flex items-center gap-2">
-            Learn More About Integration Marketplace{" "}
-              <span>
+        </h2>
+        <p className="text-secondary font-semibold leading-8">
+          Simplify even more business workflows by connecting vetted, pre-built
+          software integrations to BambooHR. Your employee data stays accurate
+          and secure, and you have hundreds of solutions at your fingertips to
+          help your people and your business thrive.
+        </p>
+        <div>
+          <Link
+            to="/details-marketplace"
+            className="text-[#00673b] font-bold text-lg text-start md:text-start"
+            title="Learn More About Integration Marketplace"
+          >
+            <h3 className="text-primary font-bold text-base text-start md:mt-8 mt-2 md:text-start">
+              Learn More About Integration Marketplace{" "}
+              <span className="ml-2">
                 {" "}
-                <MdArrowForwardIos className="" />
+                <FaChevronRight className="inline-block text-primary" />
               </span>
-            </h5>
+            </h3>
           </Link>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default MarketPlaceIntegrate;

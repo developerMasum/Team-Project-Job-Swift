@@ -9,10 +9,10 @@ const GreatWork = () => {
             We set people free to do great work.
           </h1>
           <p className="text-center text[18px] text-gray-500">
-            BambooHR software collects and organizes all the information you
+            Job Swift software collects and organizes all the information you
             gather throughout the employee life cycle, and then helps you use it
             to achieve great things. Whether you’re hiring, onboarding,
-            preparing compensation, or building culture, BambooHR gives you the
+            preparing compensation, or building culture, Job Swift gives you the
             tools and insights to focus on your most important asset—your
             people.
           </p>
@@ -37,7 +37,7 @@ const GreatWork = () => {
           <div>
             <h3 className="text-xl font-bold">Easy to Set Up, Easy to Use</h3>
             <p className="text-gray-500 text-justify">
-              We built BambooHR to be intuitive, clear, and easy to use. People
+              We built Job Swift to be intuitive, clear, and easy to use. People
               get it immediately, they love using it, and they’ll love you for
               choosing our software.
             </p>
