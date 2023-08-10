@@ -3,6 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
+import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
         {
           path:'demo-page',
           element:<DemoPage></DemoPage>
-        }
+        },
+        {
+          path:'details-marketplace',
+          element:<DetailsMarketPlaceIntegrate />
+      },
       ]
     },
   ]);
