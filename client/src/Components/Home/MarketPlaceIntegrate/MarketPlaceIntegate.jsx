@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaChevronRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MarketPlaceIntegrate = () => {
   return (
@@ -11,7 +11,7 @@ const MarketPlaceIntegrate = () => {
           alt=""
         />
       </div>
-      <div className="w-full  mt-6 pl-0 md:pl-10 md:mt-0 md:w-1/2">
+      <div className="w-full  mt-6  md:pl-10 md:mt-0 md:w-1/2">
         <h2 className="text-primary md:text-2xl font-bold text-xl text-center md:text-start mb-2">
           Integration Marketplace
         </h2>
