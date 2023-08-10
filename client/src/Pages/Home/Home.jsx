@@ -4,6 +4,7 @@ import PaySection from "../../components/Home/PaySection";
 import HrPlatform from "../../components/Home/HrPlatform";
 import Banner from "../../Components/Home/Banner/Banner";
 import EmployeeExperience from "../../components/Home/EmployeeExperience";
+import Slider from "../../components/Home/Slider/Slider";
 
 const Home = () => {
   return (
@@ -22,6 +23,11 @@ const Home = () => {
 
       <div className="mt-12">
         <EmployeeExperience />
+      </div>
+      {/* slider */}
+      <div className="mt-12"> 
+        <h2 className="text-5xl font-bold text-center text-primary font-sans italic ">Why People LOVE JobSwift</h2>
+        <Slider />
       </div>
     </div>
   );
