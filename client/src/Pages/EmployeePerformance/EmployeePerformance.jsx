@@ -22,7 +22,7 @@ const EmployeePerformance = () => {
               Understand what matters most to your people.
             </h2>
             <p className="text-[18px] text-fray-600 leading-6 text-justify">
-              Feedback and sentiment tools in BambooHR help you develop an
+              Feedback and sentiment tools in Job Swift help you develop an
               environment of honest, two-way communication and timely action,
               setting the stage for growth and a great employee experience.
             </p>

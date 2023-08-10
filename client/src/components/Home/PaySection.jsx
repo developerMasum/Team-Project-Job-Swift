@@ -6,14 +6,14 @@ const PaySection = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0   md:ml-96   items-center justify-items-end">
       <div className=" ">
-        <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
+        <h2 className="text-primary md:text-2xl font-bold text-xl text-center md:text-start mb-2">
           Payroll, Time & Benefits
         </h2>
         <p className="font-semibold text-secondary leading-8">
-          BambooHR allows you to track hours worked, manage benefits enrollment,
-          and run payroll all from a single platform. No more data double entry
-          and manual approval processes—just easy, accurate payroll for you and
-          your employees.
+          Job Swift allows you to track hours worked, manage benefits
+          enrollment, and run payroll all from a single platform. No more data
+          double entry and manual approval processes—just easy, accurate payroll
+          for you and your employees.
         </p>
 
         <Link to={"/"} className="">

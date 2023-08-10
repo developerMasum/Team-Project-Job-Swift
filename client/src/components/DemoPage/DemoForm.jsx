@@ -28,9 +28,9 @@ const DemoForm = () => {
     <div className="w-full md:max-w-[500px] border-[1px] bg-neutral-50 rounded-t-lg  mx-auto md:p-6">
       <form className="space-y-4 p-6">
         <h1 className="text-primary font-[900] text-2xl text-center">
-          See BambooHR in Action
+          See Job Swift in Action
         </h1>
-        <div className="md:flex space-y-4 md:space-y-0 md:space-x-2" >
+        <div className="md:flex space-y-4 md:space-y-0 md:space-x-2">
           <input
             type="text"
             className="flex-1 p-2 placeholder-gray-400 border rounded w-full"
@@ -83,7 +83,7 @@ const DemoForm = () => {
           <p>
             By submitting this information, I consent to receiving marketing
             communications from BambooHR, including emails and phone calls.
-            Please see our Privacy Policy to understand how BambooHR handles
+            Please see our Privacy Policy to understand how Job Swift handles
             your personal information. For California residents, please click
             here. helo
           </p>

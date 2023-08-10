@@ -13,14 +13,13 @@ const HrPlatform = () => {
         />
       </div>
       <div className="w-full space-y-6 mt-6 md:mt-0 md:w-1/2 ">
-        <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
+        <h2 className="text-primary md:text-2xl font-bold text-xl text-center md:text-start mb-2">
           The Complete HR Platform
         </h2>
         <p className="text-secondary font-semibold leading-8">
-          BambooHR simplifies and supports every step in the employee
-          experience through its intuitive 
-          features and flexible integrations, all
-          connected to a single, secure source of data.
+          Job Swift simplifies and supports every step in the employee
+          experience through its intuitive features and flexible integrations,
+          all connected to a single, secure source of data.
         </p>
         <div>
           <Link
