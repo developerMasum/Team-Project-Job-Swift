@@ -6,7 +6,7 @@ const PaySection = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0   md:ml-96   items-center justify-items-end">
       <div className=" ">
-        <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-2">
+        <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
           Payroll, Time & Benefits
         </h2>
         <p className="font-semibold text-secondary">

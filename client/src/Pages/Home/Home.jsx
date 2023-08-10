@@ -3,6 +3,7 @@ import HrDataReporting from "../../Components/Home/HrDataReporting/HrDataReporti
 import PaySection from "../../components/Home/PaySection";
 import HrPlatform from "../../components/Home/HrPlatform";
 import Banner from "../../Components/Home/Banner/Banner";
+import EmployeeExperience from "../../components/Home/EmployeeExperience";
 
 const Home = () => {
   return (
@@ -17,6 +18,10 @@ const Home = () => {
 
       <div className="mt-12">
         <PaySection />
+      </div>
+
+      <div className="mt-12">
+        <EmployeeExperience />
       </div>
     </div>
   );
