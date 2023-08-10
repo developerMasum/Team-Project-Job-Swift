@@ -1,31 +1,34 @@
 import React from "react";
-import { AiOutlineRight } from "react-icons/ai";
+import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const PaySection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center">
-      <div className="md:ml-20 md:mr-20">
-        <h2 className="text-2xl md:text-3xl font-semibold text-primary mb-2">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0   md:ml-96   items-center justify-items-end">
+      <div className=" ">
+        <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
           Payroll, Time & Benefits
         </h2>
-        <p className="font-semibold text-secondary">
+        <p className="font-semibold text-secondary leading-8">
           BambooHR allows you to track hours worked, manage benefits enrollment,
           and run payroll all from a single platform. No more data double entry
           and manual approval processes—just easy, accurate payroll for you and
           your employees.
         </p>
 
-        <p className="text-primary flex gap-2 text-lg md:text-xl font-semibold items-center mt-4 md:mt-10">
-          Learn More About Payroll, Time & Benefits{" "}
-          <span>
-            <AiOutlineRight className="w-4" />
-          </span>
-        </p>
+        <Link to={"/"} className="">
+          <h3 className="text-primary font-bold text-base text-start md:text-start mt-2 md:mt-8 ">
+            Learn More About Payroll, Time & Benefits
+            <span className="ml-2">
+              <FaChevronRight className="inline-block text-primary" />
+            </span>
+          </h3>
+        </Link>
       </div>
-      <div className="mt-6 md:mt-0">
+      <div className="mt-6 md:mt-0   ">
         <img
           src="https://www.bamboohr.com/media_1a3f05063d0c65ac5f1e19b54dca44ef785738332.png?width=2000&format=webply&optimize=medium"
-          className="w-2/3 h-auto"
+          className="w-96 h-auto rounded-2xl "
           alt=""
         />
       </div>
