@@ -22,7 +22,7 @@ const EmployeeExperience = () => {
                         BambooHR offers tools to help you gather feedback, strengthen employee satisfaction, and grow your people.
                     </p>
                     <Link to='/employee-experience'>
-                        <p className="text-primary font-bold text-base text-start md:mt-8 mt-2 md:text-start">
+                        <p className="text-primary font-bold text-base text-start md:mt-3 mt-2 md:text-start">
                             Learn More About Employee Experience & Performance{' '}
                             <FaChevronRight className="inline-block"></FaChevronRight>
                         </p>

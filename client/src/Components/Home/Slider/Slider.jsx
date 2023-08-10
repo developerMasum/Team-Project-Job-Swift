@@ -9,11 +9,9 @@ const Slider = () => {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    // Fetch testimonial data from a JSON file (replace with your API endpoint)
     fetch("comments.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log("testi", data);
         setTestimonials(data);
       })
       .catch((error) =>
@@ -28,26 +26,32 @@ const Slider = () => {
     );
   };
 
-  const testimonialChunks = chunkArray(testimonials, 3); // Change the size to 3
+  const testimonialChunks = chunkArray(testimonials, 3);
 
   return (
-    <Swiper
-      pagination={true}
-      modules={[Pagination]}
-      className="mySwiper"
-    >
-      {testimonialChunks.map((chunk, index) => (
-        <SwiperSlide key={index}>
-          <div className="py-10 px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6"> {/* Change grid-cols-2 to grid-cols-3 */}
-              {chunk.map((data) => (
-                <SliderPreview key={data.id} data={data} />
-              ))}
+    <div className="mySwiper">
+      <Swiper pagination={{ clickable: true }} modules={[Pagination]} 
+      
+      breakpoints={{
+        640: {
+          slidesPerView: 1, // Display one slide per view on devices with width 640px or less
+        },
+        // Add more breakpoints as needed
+      }}
+      >
+        {testimonialChunks.map((chunk, index) => (
+          <SwiperSlide key={index}>
+            <div className="py-0 md:py-10 px-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {chunk.map((data) => (
+                  <SliderPreview key={data.id} data={data} />
+                ))}
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 
