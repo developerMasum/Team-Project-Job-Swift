@@ -3,12 +3,13 @@ import HrDataReporting from "../../Components/Home/HrDataReporting/HrDataReporti
 import PaySection from "../../components/Home/PaySection";
 import HrPlatform from "../../components/Home/HrPlatform";
 import Banner from "../../Components/Home/Banner/Banner";
+import EmployeeExperience from "../../components/Home/EmployeeExperience";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <HrDataReporting />
+   
       {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
       <HrPlatform />
       <div className="mt-12">
@@ -17,6 +18,10 @@ const Home = () => {
 
       <div className="mt-12">
         <PaySection />
+      </div>
+
+      <div className="mt-12">
+        <EmployeeExperience />
       </div>
     </div>
   );
