@@ -13,16 +13,16 @@ const EmployeeExperience = () => {
                     alt="employee"
                     className='max-w-full md:max-w-none'
                 />
-                <div className='space-y-6 mx-0 md:mx-12 md:px-10  '>
+                <div className='space-y-6 mx-0 md:w-4/12 '>
                     <h2 className="text-primary md:text-3xl font-bold text-xl text-center md:text-start mb-2">
                         Employee Experience & Performance
                     </h2>
-                    <p className='text-gray-600 leading-8'>
+                    <p className='text-secondary font-semibold leading-8'>
                         A strong company culture depends on listening to employees and investing in their development.
                         BambooHR offers tools to help you gather feedback, strengthen employee satisfaction, and grow your people.
                     </p>
                     <Link to='/employee-experience'>
-                        <p className="text-[#00673b] font-bold text-xl text-start md:text-start">
+                        <p className="text-primary font-bold text-base text-start md:mt-8 mt-2 md:text-start">
                             Learn More About Employee Experience & Performance{' '}
                             <FaChevronRight className="inline-block"></FaChevronRight>
                         </p>
