@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <HrDataReporting />
+   
       {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
       <HrPlatform />
       <div className="mt-12">
