@@ -3,12 +3,17 @@ import React from "react";
 import { FaBackward, FaForward } from "react-icons/fa";
 
 import DemoForm from "../../components/DemoPage/DemoForm";
+import HrBusiness from "../../components/DemoPage/HrBusiness";
+import GreatWork from "../../components/DemoPage/GreatWork";
+import Heart from "../../components/DemoPage/Heart";
+import HeightLogo from "../../components/DemoPage/HeightLogo";
 
 
 
 const DemoPage = () => {
   return (
-    <div className="bg-image -rounded-b-xl p-20 flex justify-between items-center">
+   <div>
+       <div className="bg-image -rounded-b-xl p-20 md:flex justify-between items-center">
       <div className="space-y-5">
         <h1 className="font-extrabold text-4xl text-[#00673b]">Get a demo of BambooHR.</h1>
         <p>
@@ -27,6 +32,11 @@ const DemoPage = () => {
            <DemoForm></DemoForm>
       </div>
     </div>
+    <HrBusiness></HrBusiness>
+    <GreatWork></GreatWork>
+    <Heart></Heart>
+    <HeightLogo></HeightLogo>
+   </div>
   );
 };
 
