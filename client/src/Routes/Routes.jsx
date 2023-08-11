@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
+import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       },{
           path:'/employee-experience',
           element: <EmployeePerformance></EmployeePerformance>
+        },
+        {
+          path: "hiring",
+          element:<HiringOnboarding></HiringOnboarding>
         }
       ]
     },
