@@ -3,7 +3,7 @@ import { FaQuoteLeft, FaQuoteRight, FaRegStar, FaStar } from "react-icons/fa";
 import Rating from "react-rating";
 
 const SliderPreview = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   const { testimonial, avatar, name, rating,titleOfComment,umberOfEmployees,companyName,jobPosition } = data;
   return (
     <div>

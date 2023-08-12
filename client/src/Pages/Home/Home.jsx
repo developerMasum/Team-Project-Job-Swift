@@ -6,7 +6,7 @@ import MarketPlaceIntegrate from "../../components/Home/MarketPlaceIntegrate/Mar
 import Hiring from "../../components/Home/Hiring/Hiring";
 import Banner from "../../components/Home/Banner/Banner";
 import HrDataReporting from "../../components/Home/HrDataReporting/HrDataReporting";
-import Slider from "../../components/Home/Slider/SliderCSS";
+import Slider from "../../components/Home/Slider/Slider";
 
 const Home = () => {
   return (

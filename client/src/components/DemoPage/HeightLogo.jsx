@@ -1,11 +1,11 @@
-import React from "react";
-import img1 from "../../../public/heartimage1.png";
-import img2 from "../../../public/heartimage2.png";
-import img3 from "../../../public/heartimage3.png";
-import img4 from "../../../public/heartimage4.png";
-import img5 from "../../../public/heartimage5.png";
-import img6 from "../../../public/heartimage6.png";
-import img7 from "../../../public/heartimage7.png";
+
+import img1 from "../../../src/assets/Image/heartimage1.png";
+import img2 from "../../../src/assets/Image/heartimage2.png";
+import img3 from "../../../src/assets/Image/heartimage3.png";
+import img4 from "../../../src/assets/Image/heartimage4.png";
+import img5 from "../../../src/assets/Image/heartimage5.png";
+import img6 from "../../../src/assets/Image/heartimage6.png";
+import img7 from "../../../src/assets/Image/heartimage7.png";
 const images = [img1, img2, img3, img4, img5, img6, img7];
 
 const HeightLogo = () => {
