@@ -40,7 +40,7 @@ const Slider = () => {
         // Add more breakpoints as needed
       }}
       >
-        {testimonialChunks.map((chunk, index) => (
+        {testimonialChunks.map((chunk,index) => (
           <SwiperSlide key={index}>
             <div className="py-0 md:py-10 px-4">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
