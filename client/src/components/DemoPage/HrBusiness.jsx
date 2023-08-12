@@ -1,10 +1,10 @@
 import React from "react";
-import image01 from '../../../public/change-org.svg'
-import image02 from '../../../public/jacksonville-jaguars.svg'
-import image03 from '../../../public/jelly-belly.svg'
-import image04 from '../../../public/postmates.svg'
-import image05 from '../../../public/usertesting.svg'
-import image06 from '../../../public/ziprecruiter.svg'
+import image01 from '../../../src/assets/Image/change-org.svg'
+import image02 from '../../../src/assets/Image/jacksonville-jaguars.svg'
+import image03 from '../../../src/assets/Image/jelly-belly.svg'
+import image04 from '../../../src/assets/Image/postmates.svg'
+import image05 from '../../../src/assets/Image/usertesting.svg'
+// import image06 from '../../../src/assets/Image/ziprecruiter.svg'
 
 
 const HrBusiness = () => {

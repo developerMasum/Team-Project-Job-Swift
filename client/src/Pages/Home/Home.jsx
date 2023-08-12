@@ -1,19 +1,19 @@
-import HrDataReporting from "../../Components/Home/HrDataReporting/HrDataReporting";
 import PaySection from "../../components/Home/PaySection";
 import HrPlatform from "../../components/Home/HrPlatform";
-import Banner from "../../Components/Home/Banner/Banner";
 import EmployeeExperience from "../../components/Home/EmployeeExperience";
-import Slider from "../../components/Home/Slider/Slider";
 import HeadlineBar from "../Shared/HeadlineBar";
-import MarketPlaceIntegrate from "../../Components/Home/MarketPlaceIntegrate/MarketPlaceIntegate";
+import MarketPlaceIntegrate from "../../components/Home/MarketPlaceIntegrate/MarketPlaceIntegate";
 import Hiring from "../../components/Home/Hiring/Hiring";
+import Banner from "../../components/Home/Banner/Banner";
+import HrDataReporting from "../../components/Home/HrDataReporting/HrDataReporting";
+import Slider from "../../components/Home/Slider/Slider";
 
 const Home = () => {
   return (
     <div className="mt-32 lg:md:mt-20">
-      <HeadlineBar></HeadlineBar>
+      <HeadlineBar />
       <Banner />
-      <HrPlatform></HrPlatform>
+      <HrPlatform />
       <div className="mt-12">
         <HrDataReporting />
       </div>
