@@ -1,0 +1,27 @@
+.purple-color{
+    color: #4C3293;
+}
+
+.first-btn{
+    /* background-color: #794FCD; */
+    background-color: #4C3293;
+    border: 3px solid #4C3293;
+    color: white;
+    font-weight: 700;
+    padding: 8px 25px;
+    border-radius: 50px;
+}
+.first-btn:hover{
+    background-color: #3c1d94;
+    transition: background-color 0.3s ease-out;
+   
+}
+.second-btn{
+    border: 3px solid #4C3293;
+    padding: 8px 25px;
+    border-radius: 50px;
+}
+.second-btn:hover{
+    background-color: #b4abca;
+    transition: background-color 0.3s ease-out;
+}
