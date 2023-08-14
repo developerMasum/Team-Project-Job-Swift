@@ -24,7 +24,7 @@ const router = createBrowserRouter([
           path:'details-marketplace',
           element:<DetailsMarketPlaceIntegrate />
       },{
-          path:'/employee-experience',
+          path:'employee-experience',
           element: <EmployeePerformance></EmployeePerformance>
         }
       ]
