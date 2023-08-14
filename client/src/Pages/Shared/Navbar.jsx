@@ -1,8 +1,6 @@
-import { FaSearch } from "react-icons/fa";
-
 import logo2 from "../../assets/logo/logo3.png";
 import { Link } from "react-router-dom";
-import HeadlineBar from "./HeadlineBar";
+
 const Navbar = () => {
   const navLink = (
     <>

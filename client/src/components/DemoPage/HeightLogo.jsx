@@ -13,8 +13,8 @@ const HeightLogo = () => {
     <div className="bg-gradient-to-bl from-[#e0f99c] to-[#e0f99c]">
       <div className="max-w-[1100px] mx-auto p-10  ">
         <div className="grid sm:grid-cols-2 ml-12 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-20">
-          {images.map((image) => (
-            <img md:width={150} src={image} alt="logo" />
+          {images.map((image,index) => (
+            <img key={index} md:width={150} src={image} alt="logo" />
           ))}
         </div>
       </div>
