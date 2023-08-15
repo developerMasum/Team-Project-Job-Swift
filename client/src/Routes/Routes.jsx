@@ -6,6 +6,7 @@ import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
 import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
+import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
 
 const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         {
           path: '/hr-data',
           element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>
+        },
+        {
+          path: "/single-pay",
+          element: <PayrollTimeBenefits />,
         },
       ]
     },
