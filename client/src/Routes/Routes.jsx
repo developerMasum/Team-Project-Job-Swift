@@ -5,6 +5,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
+import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
 
 const router = createBrowserRouter([
     {
@@ -26,9 +27,18 @@ const router = createBrowserRouter([
       },{
           path:'employee-experience',
           element: <EmployeePerformance></EmployeePerformance>
-        }
+        },
+        {
+          path: '/hr-data',
+          element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>
+        },
       ]
     },
   ]);
 
-  export default router ;
+      
+//     ]
+//   },
+// ]);
+
+export default router;
