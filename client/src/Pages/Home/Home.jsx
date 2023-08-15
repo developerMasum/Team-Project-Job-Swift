@@ -6,7 +6,7 @@ import MarketPlaceIntegrate from "../../components/Home/MarketPlaceIntegrate/Mar
 import Hiring from "../../components/Home/Hiring/Hiring";
 import Banner from "../../components/Home/Banner/Banner";
 import HrDataReporting from "../../components/Home/HrDataReporting/HrDataReporting";
-// import Slider from "../../components/Home/Slider/Slider";
+import Slider from "../../components/Home/Slider/Slider";
 
 const Home = () => {
   return (
@@ -38,7 +38,8 @@ const Home = () => {
         <h2 className="text-5xl font-bold text-center text-primary font-sans italic ">
           Why People LOVE JobSwift
         </h2>
-        {/* <Slider /> */}
+        <Slider /> 
+        {/* slider addeed */}
       </div>
     </div>
   );
