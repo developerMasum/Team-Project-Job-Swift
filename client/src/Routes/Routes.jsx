@@ -8,35 +8,37 @@ import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformanc
 import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: '/',
-        element: <Home />
-      },
-      {
-        path: 'demo-page',
-        element: <DemoPage></DemoPage>
-      },
-      {
-        path: 'details-marketplace',
-        element: <DetailsMarketPlaceIntegrate />
-      },
-      {
-        path: '/employee-experience',
-        element: <EmployeePerformance></EmployeePerformance>
-      },
-      {
-        path: '/hr-data',
-        element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>
-      },
+    {
+      path: "/",
+      element: <MainLayout />,
+      errorElement : <ErrorPage />,
+      children: [
+        {
+            path: '/',
+            element: <Home />
+        },
+        {
+          path:'demo-page',
+          element:<DemoPage></DemoPage>
+        },
+        {
+          path:'details-marketplace',
+          element:<DetailsMarketPlaceIntegrate />
+      },{
+          path:'employee-experience',
+          element: <EmployeePerformance></EmployeePerformance>
+        },
+        {
+          path: '/hr-data',
+          element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>
+        },
+      ]
+    },
+  ]);
 
       
-    ]
-  },
-]);
+//     ]
+//   },
+// ]);
 
 export default router;
