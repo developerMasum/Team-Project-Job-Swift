@@ -36,8 +36,8 @@ const PayrollTimeBenefits = () => {
             paydays for you and your employees.
           </p>
           <div className="flex pt-10 gap-10">
-            <button className="first-btn">Get My Free Demo</button>
-            <button className="second-btn">Try It Free</button>
+            <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] transition ease-out duration-300">Get My Free Demo</button>
+            <button className="border-4 border-[#4C3293] px-7 py-3 rounded-full hover:bg-[#b4abca] transition ease-out duration-300 ">Try It Free</button>
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@ const PayrollTimeBenefits = () => {
             "Bring all the pieces together in a single HRIS for flawlessly accurate paydays."
           }
         />
-        <button className="first-btn mt-12">Get My Free Demo</button>
+        <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] mt-12 transition ease-out duration-300">Get My Free Demo</button>
       </div>
       <div className="md:flex items-center  gap-10">
         <div className="md:w-1/2">
@@ -126,7 +126,7 @@ const PayrollTimeBenefits = () => {
             AMY BOSTON, EMPLOYEE SUCCESS MANAGER | LIONHEART CRITICAL POWER
             SPECIALISTS
           </h2>
-          <button className="first-btn">Read Amy’s Story</button>
+          <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 transition ease-out duration-300 py-2 rounded-full hover:bg-[#3c1d94]">Read Amy’s Story</button>
         </div>
       </div>
 
