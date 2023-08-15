@@ -1,6 +1,7 @@
 import React from "react";
 import BestTalent from "./BestTalent";
 import ExploreHiring from "./ExploreHiring";
+import CheckOut from "./CheckOut";
 
 const HiringOnboarding = () => {
   return (
@@ -14,8 +15,9 @@ const HiringOnboarding = () => {
           collaborative hiring and onboarding tools.
         </p>
       </div>
-          <BestTalent />
-          <ExploreHiring/>
+      <BestTalent />
+      <ExploreHiring />
+      <CheckOut />
     </>
   );
 };
