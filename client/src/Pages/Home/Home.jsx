@@ -38,7 +38,8 @@ const Home = () => {
         <h2 className="text-5xl font-bold text-center text-primary font-sans italic ">
           Why People LOVE JobSwift
         </h2>
-        <Slider />
+        <Slider /> 
+        {/* slider addeed */}
       </div>
     </div>
   );

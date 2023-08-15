@@ -14,7 +14,7 @@ const HrDataReporting = () => {
           pre-built reports, automated workflows, and in-depth analytics to back
           you up and keep you moving.
         </p>
-        <Link to={"/"} className="">
+        <Link to={"/hr-data"} className="">
           <h4 className="text-primary font-bold text-base text-start md:text-start mt-2  md:mt-10 ">
             Learn More About HR Data & Reporting{" "}
             <span>
