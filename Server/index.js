@@ -15,8 +15,10 @@ app.use(express.json())
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb')
 
+// ATSWebsite atswebsite2023
+// const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mq0mae1.mongodb.net/?retryWrites=true&w=majority`
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.mq0mae1.mongodb.net/?retryWrites=true&w=majority`
+const uri = "mongodb+srv://ATSWebsite:atswebsite2023@cluster0.3besjfn.mongodb.net/?retryWrites=true&w=majority";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -29,7 +31,27 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    const Collection = client.db('Db').collection('cc name')
+    const UserCollection = client.db('JobSwiftDb').collection('users')
+
+// app.put('/users',async(req,res)=>{
+//   const query = req.
+// })
+
+
+// post data of a new user
+app.post('/user',async(req,res)=>{
+  const query = req.body;
+  const result = await UserCollection.insertOne(query)
+  res.send(result)
+})
+
+
+    // get users data  info 
+app.get('/usersData',async(req,res)=>{
+  const result = await UserCollection.find().toArray()
+  res.send(result)
+
+})
 
 
     // Send a ping to confirm a successful connection
