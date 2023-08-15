@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 
-const HrDataReporting = () => {
+const HrData = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0 md:mr-96 items-center justify-items-start">
       <div className="">
@@ -35,4 +35,4 @@ const HrDataReporting = () => {
   );
 };
 
-export default HrDataReporting;
+export default HrData;
