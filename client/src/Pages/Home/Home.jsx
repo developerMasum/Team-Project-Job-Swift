@@ -15,7 +15,7 @@ const Home = () => {
       <Banner />
       <HrPlatform />
       <div className="mt-12">
-       <HrData/>
+        <HrData />
       </div>
 
       {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
@@ -38,7 +38,7 @@ const Home = () => {
         <h2 className="text-5xl font-bold text-center text-primary font-sans italic ">
           Why People LOVE JobSwift
         </h2>
-        <Slider /> 
+        <Slider />
         {/* slider addeed */}
       </div>
     </div>
