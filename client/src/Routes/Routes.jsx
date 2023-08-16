@@ -9,6 +9,8 @@ import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMor
 import Sidebar from "../Pages/Dashboard/Dashboard/Sidebar";
 import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
 import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import Demo from "../components/Dashboard/Demo/Demo";
 
 const router = createBrowserRouter([
   {
@@ -44,13 +46,22 @@ const router = createBrowserRouter([
         path: "/hiring",
         element: <HiringOnboarding></HiringOnboarding>,
       },
-  {
-          path: '/dashboard',
-          element: <Sidebar></Sidebar>
-        },
+      {
+        path: "/dashboard",
+        element: <Sidebar></Sidebar>,
+      },
     ],
   },
+  {
+    path: '/dashboard',
+    element: <DashboardLayout />,
+    children: [
+{
+  path: '/dashboard',
+  element: <Demo />
+}
+    ]
+  }
 ]);
-
 
 export default router;
