@@ -6,6 +6,7 @@ import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
 import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
+import Sidebar from "../Pages/Dashboard/Dashboard/Sidebar";
 import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
 import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
 
@@ -43,11 +44,13 @@ const router = createBrowserRouter([
         path: "/hiring",
         element: <HiringOnboarding></HiringOnboarding>,
       },
+  {
+          path: '/dashboard',
+          element: <Sidebar></Sidebar>
+        },
     ],
   },
 ]);
-//     ]
-//   },
-// ]);
+
 
 export default router;
