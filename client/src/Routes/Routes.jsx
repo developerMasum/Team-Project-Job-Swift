@@ -7,28 +7,30 @@ import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/De
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout />,
-      errorElement : <ErrorPage />,
-      children: [
-        {
-            path: '/',
-            element: <Home />
-        },
-        {
-          path:'demo-page',
-          element:<DemoPage></DemoPage>
-        },
-        {
-          path:'details-marketplace',
-          element:<DetailsMarketPlaceIntegrate />
-      },{
-          path:'/employee-experience',
-          element: <EmployeePerformance></EmployeePerformance>
-        }
-      ]
-    },
-  ]);
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "demo-page",
+        element: <DemoPage></DemoPage>,
+      },
 
-  export default router ;
+      {
+        path: "/employee-experience",
+        element: <EmployeePerformance></EmployeePerformance>,
+      },
+      {
+        path:'details-market-place',
+        element:<DetailsMarketPlaceIntegrate></DetailsMarketPlaceIntegrate>
+      }
+    ],
+  },
+]);
+
+export default router;

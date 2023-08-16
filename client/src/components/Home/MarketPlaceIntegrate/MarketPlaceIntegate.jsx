@@ -23,7 +23,7 @@ const MarketPlaceIntegrate = () => {
         </p>
         <div>
           <Link
-            to="/details-marketplace"
+            to="/details-market-place"
             className="text-[#00673b] font-bold text-lg text-start md:text-start"
             title="Learn More About Integration Marketplace"
           >
