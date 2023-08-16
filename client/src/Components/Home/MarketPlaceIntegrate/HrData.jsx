@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight } from "react-icons/fa";
 
-const HrDataReporting = () => {
+const HrData = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0 md:mr-96 items-center justify-items-start">
       <div className="">
@@ -14,7 +14,7 @@ const HrDataReporting = () => {
           pre-built reports, automated workflows, and in-depth analytics to back
           you up and keep you moving.
         </p>
-        <Link to={"/"} className="">
+        <Link to={"/hr-data"} className="">
           <h4 className="text-primary font-bold text-base text-start md:text-start mt-2  md:mt-10 ">
             Learn More About HR Data & Reporting{" "}
             <span>
@@ -35,4 +35,4 @@ const HrDataReporting = () => {
   );
 };
 
-export default HrDataReporting;
+export default HrData;

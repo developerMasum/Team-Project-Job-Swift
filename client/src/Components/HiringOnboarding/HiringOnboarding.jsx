@@ -5,12 +5,12 @@ import CheckOut from "./CheckOut";
 
 const HiringOnboarding = () => {
   return (
-    <>
-      <div className="text-center mx-auto">
-        <h2 className="text-primary md:text-5xl font-bold text-xl text-center my-4">
+    <div className="mx-auto px-4 md:px-8">
+      <div className="text-center">
+        <h2 className="text-primary text-4xl md:text-5xl font-bold my-4">
           Hiring & Onboarding
         </h2>
-        <p className="text-secondary font-semibold leading-8 md:my-4">
+        <p className="text-secondary font-semibold my-4">
           Improve the experience for candidates, new hires, and HR with
           collaborative hiring and onboarding tools.
         </p>
@@ -18,7 +18,7 @@ const HiringOnboarding = () => {
       <BestTalent />
       <ExploreHiring />
       <CheckOut />
-    </>
+    </div>
   );
 };
 
