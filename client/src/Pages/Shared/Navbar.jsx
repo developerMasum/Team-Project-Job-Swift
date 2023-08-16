@@ -2,8 +2,20 @@ import { FaSearch } from 'react-icons/fa';
 
 import logo2 from '../../assets/logo/logo3.png'
 import { Link } from 'react-router-dom';
-import HeadlineBar from './HeadlineBar';
+import { FaShoppingCart } from 'react-icons/fa';
+import { authContext } from '../../Auth/AuthProvider';
+import { useContext } from 'react';
 const Navbar = () => {
+    const { user, logout } = useContext(authContext)
+    const handleLogOut = () => {
+        logout()
+            .then(() => {
+                alert("Successfully LogOut")
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
 
     const navLink = <>
         <li>
@@ -23,6 +35,28 @@ const Navbar = () => {
         </li>
 
     </>
+
+    {
+        user ? <>
+
+
+            <small>
+                <img style={{ height: "30px", width: "30px", borderRadius: "10px" }} className=' rounded-4  ' src={user?.photoURL} alt="" />
+            </small>
+
+            <li onClick={handleLogOut} className='btn btn-outline btn-sm btn-error'>
+                Log-out
+            </li>
+
+            <Link to='/dashboard/mycart' className="btn btn-outline btn-sm flex justify-center items-center">
+
+                <FaShoppingCart></FaShoppingCart>
+
+            </Link>
+        </> : <>
+            <li><Link to='/login'>LogIn</Link></li>
+        </>
+    }
 
     // lg:md:flex justify-center 
     return (
@@ -46,7 +80,7 @@ const Navbar = () => {
                             </div>
 
                             <div className='flex gap-6 justify-center items-center mr-8'>
-                                <button className="btn btn-outline text-green-600 font-bold btn-sm my-3 w-1/3">Log In</button>
+                                <Link to={`/login`} className="btn btn-outline text-green-600 font-bold btn-sm my-3 w-1/3">Log In</Link>
                                 <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 my-3 w-1/2">Get a Demo</button>
                             </div>
 
@@ -81,7 +115,7 @@ const Navbar = () => {
                         </div>
 
                     </div>
-                    <button className="  btn btn-outline text-green-600 font-bold btn-sm hidden md:block">Log In</button>
+                    <Link to={`/login`} className="pt-2  btn btn-outline text-green-600 font-bold btn-sm hidden md:block ">Log In</Link>
 
                     <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">Get a Demo</button>
                 </div>

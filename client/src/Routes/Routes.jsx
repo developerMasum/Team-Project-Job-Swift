@@ -5,27 +5,37 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
 import EmployeeExperience from "../components/Home/EmployeeExperience";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
+import LogIn from "../Components/Logs/LogIn";
+import SiginIn from "../Components/Logs/SiginIn";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout />,
-      errorElement : <ErrorPage />,
-      children: [
-        {
-            path: '/',
-            element: <Home />
-        },
-        {
-          path:'demo-page',
-          element:<DemoPage></DemoPage>
-        },
-        {
-          path:'/employee-experience',
-          element: <EmployeePerformance></EmployeePerformance>
-        }
-      ]
-    },
-  ]);
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />
+      },
+      {
+        path: 'login',
+        element: <LogIn></LogIn>
+      },
+      {
+        path: 'signin',
+        element: <SiginIn></SiginIn>
+      },
+      {
+        path: 'demo-page',
+        element: <DemoPage></DemoPage>
+      },
+      {
+        path: '/employee-experience',
+        element: <EmployeePerformance></EmployeePerformance>
+      }
+    ]
+  },
+]);
 
-  export default router ;
+export default router;
