@@ -52,7 +52,7 @@ const CheckOut = () => {
               Applicant Tracking System (ATS) Case Study
             </h2>
             <p className="font-semibold text-secondary mt-2">
-              See how the BambooHR ATS helped The Centre for Family Medicine
+              See how the Job Swift ATS helped The Centre for Family Medicine
               rapidly staff emergency COVID-19 vaccination clinics to meet the
               needs of their community.
             </p>
@@ -91,7 +91,7 @@ const CheckOut = () => {
 
       <div className="text-center mt-6 px-4 py-4">
         <h2 className=" md:text-4xl lg:text-5xl font-bold my-2 italic text-blue-900  ">
-          Want to experience what BambooHR can do for you?
+          Want to experience what Job Swift can do for you?
         </h2>
         <p className="text-secondary font-semibold my-2 ">
           There's no substitute for hands-on experience. Try it yourself.

@@ -6,7 +6,7 @@ const EmployeeResource = () => {
   const resources = [
     {
       id: 1,
-      name: "Speedway Motors: Measuring Culture with BambooHR",
+      name: "Speedway Motors: Measuring Culture with Job Swift ",
       image:
         "https://www.bamboohr.com/hr-software/media_1ec84c0925a1a7ccec48f6340930988163f39fc9b.png?width=2000&format=webply&optimize=medium",
       description:

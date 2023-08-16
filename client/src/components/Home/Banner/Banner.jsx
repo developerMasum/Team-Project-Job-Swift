@@ -38,7 +38,7 @@ const Banner = () => {
         </div>
         <div>
           <h2 className="md:mt-16 px-3 md:px-0 text-[30px] font-black text-center text-[#00673b]">
-            30,000+ Companies Big & Small Trust BambooHR
+            30,000+ Companies Big & Small Trust Job Swift
           </h2>
         </div>
         <div className="py-14 md:flex justify-center md:gap-16 grid grid-rows-3 grid-flow-col gap-4 gap-y-5">
