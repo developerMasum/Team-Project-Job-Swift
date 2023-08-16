@@ -16,7 +16,7 @@ const PaySection = () => {
           for you and your employees.
         </p>
 
-        <Link to={"/"} className="">
+        <Link to="/single-pay" className="">
           <h3 className="text-primary font-bold text-base text-start md:text-start mt-2 md:mt-8 ">
             Learn More About Payroll, Time & Benefits
             <span className="ml-2">
