@@ -26,6 +26,7 @@ const router = createBrowserRouter([
         path: "demo-page",
         element: <DemoPage></DemoPage>,
       },
+
       {
         path: "details-marketplace",
         element: <DetailsMarketPlaceIntegrate />,
@@ -63,5 +64,6 @@ const router = createBrowserRouter([
     ]
   }
 ]);
+
 
 export default router;
