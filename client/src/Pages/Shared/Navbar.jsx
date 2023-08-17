@@ -16,6 +16,7 @@ const Navbar = () => {
       <li>
         <Link>Resources</Link>
       </li>
+      
       <li>
         <Link>About</Link>
       </li>
@@ -126,11 +127,11 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-       <Link to={'/login'}>
-       <button className="  btn btn-outline text-green-600 font-bold btn-sm hidden md:block">
-            Log In
-          </button>
-       </Link>
+          <Link to={"/login"}>
+            <button className="  btn btn-outline text-green-600 font-bold btn-sm hidden md:block">
+              Log In
+            </button>
+          </Link>
 
           <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
             Get a Demo

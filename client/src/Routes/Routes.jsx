@@ -12,6 +12,9 @@ import DashboardLayout from "../Layouts/DashboardLayout";
 import Demo from "../components/Dashboard/Demo/Demo";
 import LogIn from "../Pages/Auth/LogIn";
 import SignIn from "../Pages/Auth/SignIn";
+import { PostJob } from "../Pages/PostJob/PostJob";
+
+
 
 
 const router = createBrowserRouter([
@@ -57,6 +60,11 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <SignIn />
+      },
+      {
+        path:'post-job',
+        element:<PostJob></PostJob>
+        
       }
  
     ],
