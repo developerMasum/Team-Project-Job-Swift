@@ -5,6 +5,12 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
+import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
+import Sidebar from "../Pages/Dashboard/Dashboard/Sidebar";
+import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
+import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import Demo from "../components/Dashboard/Demo/Demo";
 
 const router = createBrowserRouter([
   {
@@ -22,15 +28,42 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/employee-experience",
+        path: "details-marketplace",
+        element: <DetailsMarketPlaceIntegrate />,
+      },
+      {
+        path: "employee-experience",
         element: <EmployeePerformance></EmployeePerformance>,
       },
       {
-        path:'details-market-place',
-        element:<DetailsMarketPlaceIntegrate></DetailsMarketPlaceIntegrate>
-      }
+        path: "/hr-data",
+        element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>,
+      },
+      {
+        path: "/single-pay",
+        element: <PayrollTimeBenefits />,
+      },
+      {
+        path: "/hiring",
+        element: <HiringOnboarding></HiringOnboarding>,
+      },
+      {
+        path: "/dashboard",
+        element: <Sidebar></Sidebar>,
+      },
     ],
   },
+  {
+    path: '/dashboard',
+    element: <DashboardLayout />,
+    children: [
+{
+  path: '/dashboard',
+  element: <Demo />
+}
+    ]
+  }
 ]);
+
 
 export default router;

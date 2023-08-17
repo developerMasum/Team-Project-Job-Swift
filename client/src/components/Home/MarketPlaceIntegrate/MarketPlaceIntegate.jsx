@@ -17,7 +17,7 @@ const MarketPlaceIntegrate = () => {
         </h2>
         <p className="text-secondary font-semibold leading-8">
           Simplify even more business workflows by connecting vetted, pre-built
-          software integrations to BambooHR. Your employee data stays accurate
+          software integrations to Job Swift . Your employee data stays accurate
           and secure, and you have hundreds of solutions at your fingertips to
           help your people and your business thrive.
         </p>
