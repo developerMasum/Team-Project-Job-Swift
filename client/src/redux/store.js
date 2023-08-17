@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import DataSlice from "./DataSlice";
 
+import jobSlice from "./jobSlice";
 
 
  const store = configureStore({
     reducer: {
-        counter: DataSlice,
+        counter: jobSlice,
     }
  })
  export default store;

@@ -39,7 +39,7 @@ const EmployeeExplore = () => {
   return (
     <div className="max-w-[1100px] mx-auto">
       <h2 className="text-2xl md:text-3xl text-center my-12 font-bold text-[#5a3a27]">
-        Explore Employee Experience and Performance with BambooHR
+        Explore Employee Experience and Performance with Job Swift
       </h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {areasOfFocusData.map((area) => (

@@ -3,10 +3,19 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
-import EmployeeExperience from "../components/Home/EmployeeExperience";
+import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
+
 import LogIn from "../Components/Logs/LogIn";
 import SiginIn from "../Components/Logs/SiginIn";
+
+import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
+import Sidebar from "../Pages/Dashboard/Dashboard/Sidebar";
+import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
+import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import Demo from "../components/Dashboard/Demo/Demo";
+
 
 const router = createBrowserRouter([
   {
@@ -15,10 +24,36 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
-        element: <Home />
+
+        path: "/",
+        element: <Home />,
       },
       {
+        path: "demo-page",
+        element: <DemoPage></DemoPage>,
+      },
+
+      {
+        path: "details-marketplace",
+        element: <DetailsMarketPlaceIntegrate />,
+      },
+      {
+        path: "employee-experience",
+        element: <EmployeePerformance></EmployeePerformance>,
+      },
+      {
+        path: "/hr-data",
+        element: <LearnMoreHrDataReporting></LearnMoreHrDataReporting>,
+      },
+      {
+        path: "/single-pay",
+        element: <PayrollTimeBenefits />,
+      },
+      {
+        path: "/hiring",
+        element: <HiringOnboarding></HiringOnboarding>,
+      },
+  {
         path: 'login',
         element: <LogIn></LogIn>
       },
@@ -27,15 +62,22 @@ const router = createBrowserRouter([
         element: <SiginIn></SiginIn>
       },
       {
-        path: 'demo-page',
-        element: <DemoPage></DemoPage>
+        path: "/dashboard",
+        element: <Sidebar></Sidebar>,
       },
-      {
-        path: '/employee-experience',
-        element: <EmployeePerformance></EmployeePerformance>
-      }
-    ]
+    ],
   },
+  {
+    path: '/dashboard',
+    element: <DashboardLayout />,
+    children: [
+{
+  path: '/dashboard',
+  element: <Demo />
+}
+    ]
+  }
 ]);
+
 
 export default router;
