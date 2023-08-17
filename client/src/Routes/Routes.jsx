@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "details-marketplace",
+        path: "/details-marketplace",
         element: <DetailsMarketPlaceIntegrate />,
       },
       {
