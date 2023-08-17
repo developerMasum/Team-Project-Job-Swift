@@ -25,7 +25,7 @@ const Navbar = () => {
   // lg:md:flex justify-center
   return (
     <>
-      <div className="flex flex-col navbar rounded-xl shadow-lg bg-base-400   bg-opacity-40  fixed mt-[-120px] lg:md:flex-row bg-base-200 lg:md:mt-[-80px] max-w-7xl mx-auto ">
+      <div className="navbar fixed z-10 bg-opacity-100 max-w-screen-xl bg-slate-200 text-black ">
         <div className="flex justify-around gap-40 lg:md:navbar-start lg:md:gap-10">
           <div className="dropdown bg-green-400">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -132,9 +132,11 @@ const Navbar = () => {
           </button>
        </Link>
 
-          <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
+       <Link to={'/demo-page'}>
+       <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
             Get a Demo
           </button>
+       </Link>
         </div>
       </div>
     </>

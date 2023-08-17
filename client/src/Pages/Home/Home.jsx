@@ -10,7 +10,7 @@ import HrData from "../../components/Home/MarketPlaceIntegrate/HrData";
 
 const Home = () => {
   return (
-    <div className="mt-32 lg:md:mt-20">
+    <div className="pt-5 lg:md:pt-16">
       <HeadlineBar />
       <Banner />
       <HrPlatform />

@@ -43,7 +43,7 @@ const LogIn = () => {
     return (
 
 
-        <div className=' px-4 lg:md:px-24 lg:md:w-1/2 mx-auto '>
+        <div className='px-4 md:px-5 lg:px-2 w-full max-w-md mx-auto mt-20 '>
 
             <form onSubmit={handleSubmit(onSubmit)} className="card-body rounded-xl shadow-2xl  border border-green-600">
                 <div className='text-center text-2xl font-bold'>
@@ -74,7 +74,7 @@ const LogIn = () => {
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
                 </div>
-                <small className='text-center text-fuchsia-700 my-3'>Are you new to the website,SignUp Now<span><Link className='btn btn-outline btn-sm ml-4' to="/register">SignUp</Link></span></small>
+                <small className='text-center text-fuchsia-700 my-3'>Are you new to the website,SignUp Now<span><Link className='btn btn-link btn-sm ml-4' to="/register">SignUp</Link></span></small>
                 <div className="form-control mt-6">
                     <input type="submit" placeholder="" value="Login" className="input input-bordered btn btn-outline" />
                 </div>
