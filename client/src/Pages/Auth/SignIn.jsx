@@ -30,7 +30,7 @@ const SignIn = () => {
                 console.log(data);
                 updateUserProfile(data.name, data.photoURL)
                     .then(() => {
-                   
+
 
                         Swal.fire({
                             position: 'top-end',
@@ -100,7 +100,7 @@ const SignIn = () => {
                     <input type="submit" placeholder="" value='SignUp' className="input input-bordered btn btn-outline" />
                 </div>
 
-             
+
             </form>
 
         </div>
