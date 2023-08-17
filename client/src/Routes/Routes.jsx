@@ -5,16 +5,13 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import DemoPage from "../Pages/DemoPage/DemoPage";
 import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/DetailsMarketPlaceIntegrate";
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
-
-import LogIn from "../Components/Logs/LogIn";
-import SiginIn from "../Components/Logs/SiginIn";
-
 import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
-import Sidebar from "../Pages/Dashboard/Dashboard/Sidebar";
 import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
 import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
 import DashboardLayout from "../Layouts/DashboardLayout";
 import Demo from "../components/Dashboard/Demo/Demo";
+import LogIn from "../Pages/Auth/LogIn";
+import SignIn from "../Pages/Auth/SignIn";
 
 
 const router = createBrowserRouter([
@@ -53,26 +50,23 @@ const router = createBrowserRouter([
         path: "/hiring",
         element: <HiringOnboarding></HiringOnboarding>,
       },
-  {
-        path: 'login',
-        element: <LogIn></LogIn>
+      {
+        path: '/login',
+        element: <LogIn />
       },
       {
-        path: 'signin',
-        element: <SiginIn></SiginIn>
-      },
-      {
-        path: "/dashboard",
-        element: <Sidebar></Sidebar>,
-      },
+        path: '/register',
+        element: <SignIn />
+      }
+ 
     ],
   },
   {
-    path: '/dashboard',
+    path: 'dashboard',
     element: <DashboardLayout />,
     children: [
 {
-  path: '/dashboard',
+  path: 'demo',
   element: <Demo />
 }
     ]
