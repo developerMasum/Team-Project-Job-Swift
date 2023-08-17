@@ -176,9 +176,11 @@ const Navbar = () => {
             </button>
           </Link> */}
 
-          <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
+       <Link to={'/demo-page'}>
+       <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
             Get a Demo
           </button>
+       </Link>
         </div>
       </div>
     </>
