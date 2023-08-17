@@ -17,13 +17,13 @@ const MarketPlaceIntegrate = () => {
         </h2>
         <p className="text-secondary font-semibold leading-8">
           Simplify even more business workflows by connecting vetted, pre-built
-          software integrations to BambooHR. Your employee data stays accurate
+          software integrations to Job Swift . Your employee data stays accurate
           and secure, and you have hundreds of solutions at your fingertips to
           help your people and your business thrive.
         </p>
         <div>
           <Link
-            to="/details-marketplace"
+            to="/details-market-place"
             className="text-[#00673b] font-bold text-lg text-start md:text-start"
             title="Learn More About Integration Marketplace"
           >

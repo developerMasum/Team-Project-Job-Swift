@@ -82,7 +82,7 @@
 //         <div>
 //           <p>
 //             By submitting this information, I consent to receiving marketing
-//             communications from BambooHR, including emails and phone calls.
+//             communications from Job Swift , including emails and phone calls.
 //             Please see our Privacy Policy to understand how Job Swift handles
 //             your personal information. For California residents, please click
 //             here. helo
@@ -105,7 +105,7 @@ import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { createUser } from "../../redux/jobSlice";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const countries = [
   "United States",
@@ -132,8 +132,8 @@ const countries = [
 
 const DemoForm = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate()
- 
+  const navigate = useNavigate();
+
   const {
     handleSubmit,
     control,
@@ -143,11 +143,10 @@ const DemoForm = () => {
   const onSubmit = async (data) => {
     try {
       await dispatch(createUser(data));
-      navigate('/')
-      alert("Form submitted successfully!"); 
+      navigate("/");
+      alert("Form submitted successfully!");
     } catch (error) {
       console.error("Error submitting form:", error);
- 
     }
   };
 
