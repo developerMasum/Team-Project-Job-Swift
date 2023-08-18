@@ -160,7 +160,7 @@ const Navbar = () => {
 
 
               <small>
-                <img style={{ height: "30px", width: "30px", borderRadius: "10px" }} className=' rounded-4  ' src={user?.photoURL} alt="" />
+                <img style={{ height: "30px", width: "30px", borderRadius: "10px" }} className=' rounded-4  ' src={user?.photoURL} alt="user image" />
               </small>
 
 
@@ -183,12 +183,19 @@ const Navbar = () => {
               Log In
             </button>
           </Link> */}
-
+{
+  user? <>
+  <Link to={'/dashboard'}>
+  <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
+     Dashboard
+     </button>
+  </Link> </> : <> 
        <Link to={'/demo-page'}>
        <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
             Get a Demo
           </button>
-       </Link>
+       </Link></>
+}
         </div>
       </div>
     </>
