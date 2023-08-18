@@ -16,7 +16,7 @@ const Jobs = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isJobs, setJobs] = useState([]);
   useEffect(() => {
-    fetch("../../../../public/Jobs.json")
+    fetch("Jobs.json")
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);
