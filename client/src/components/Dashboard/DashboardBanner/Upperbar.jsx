@@ -1,5 +1,5 @@
 import logo2 from "../../../assets/logo/newlogo1.png";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GrMail } from "react-icons/gr";
 import { CgMenuGridR } from "react-icons/cg";
 import { FaToolbox, FaUserPlus } from "react-icons/fa";
@@ -17,16 +17,16 @@ const UpperBar = () => {
   const userImage = user?.photoURL || userBackupImage;
   const navigate = useNavigate();
 
-  const handleLogOut = () => {
-    logout()
-      .then(() => {
-        alert("Successfully LogOut")
-        navigate('/');
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }
+  // const handleLogOut = () => {
+  //   logout()
+  //     .then(() => {
+  //       alert("Successfully LogOut")
+  //       navigate('/');
+  //     })
+  //     .catch(error => {
+  //       console.log(error);
+  //     })
+  // }
 
   return (
     <>
