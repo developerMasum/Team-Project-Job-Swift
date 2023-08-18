@@ -45,17 +45,3 @@ const Sss = () => {
 export default Sss;
 
 
-// {
-//   "jobName": "Data Scientist",
-//   "cityName": "New York",
-//   "addressName": "789 Data Drive, Floor 10",
-//   "Sourced": 100,
-//   "PhoneScreen": 70,
-//   "Assessment": 50,
-//   "Interview": 30,
-//   "Offer": 15,
-//   "Hired": 5,
-//   "totalCandidates": 2,
-//   "totalActiveCandidates": 1,
-//   "lastCandidateDate": "2023-07-25"
-// }

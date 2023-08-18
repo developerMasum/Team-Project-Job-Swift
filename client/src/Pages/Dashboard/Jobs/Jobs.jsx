@@ -9,6 +9,7 @@ import icons3 from "../../../assets/Image/josbicns3.png";
 const countries = ["USA", "Canada", "UK", "Australia", "Germany"];
 
 import { AiFillStar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const Jobs = () => {
   const [isFirstOpen, setFirstOpen] = useState(false);
   const [isSecondOpen, setSecondOpen] = useState(false);
@@ -34,9 +35,12 @@ const Jobs = () => {
             <LuEdit className="h-4 w-4 text-gray-500" />
           </div>
           <div>
+            <Link to='post-job'>
             <button className="bg-[#00756a] border-2 border-[#00756a] px-5 py-2 rounded-lg text-white font-medium hover:bg-[#005f56] hover:border-[#005f56] transition-colors 3s ease-in-out">
               Create a new job
             </button>
+            </Link>
+            
           </div>
         </div>
       </div>
@@ -82,7 +86,7 @@ const Jobs = () => {
             </div>
           )}
         </div>
-        <div className="relative z-50">
+        <div className="">
           <button
             onClick={() => {
               setSecondOpen(!isSecondOpen);
@@ -216,7 +220,7 @@ const Jobs = () => {
                 </button>
               </div>
               <div>
-                <img className="w-[200px] h-[100px]" src={icons1} alt="" />
+                <img className="w-[200px] h-[100px]" src={icons2} alt="" />
               </div>
             </div>
             <div className="flex">
@@ -233,7 +237,7 @@ const Jobs = () => {
                 </button>
               </div>
               <div>
-                <img className="w-[200px] h-[100px]" src={icons1} alt="" />
+                <img className="w-[200px] h-[100px]" src={icons3} alt="" />
               </div>
             </div>
           </div>

@@ -13,6 +13,9 @@ import LogIn from "../Pages/Auth/LogIn";
 import SignIn from "../Pages/Auth/SignIn";
 import Demo from "../components/Dashboard/Demo/Demo";
 import Jobs from "../Pages/Dashboard/Jobs/Jobs";
+import { PostJob } from "../Pages/Dashboard/PostJob/PostJob";
+
+
 
 const router = createBrowserRouter([
   {
@@ -57,6 +60,8 @@ const router = createBrowserRouter([
         path: "/register",
         element: <SignIn />,
       },
+      
+ 
     ],
   },
   {
@@ -69,7 +74,10 @@ const router = createBrowserRouter([
       },
       {
         path:"jobs",
-        element:<Jobs />
+        element:<Jobs />,
+      },{
+        path:'jobs/post-job',
+        element:<PostJob />
       }
     ],
   },
