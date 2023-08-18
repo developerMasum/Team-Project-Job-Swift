@@ -41,6 +41,7 @@ const Home = () => {
         <Slider />
         {/* slider addeed */}
       </div>
+     
     </div>
   );
 };
