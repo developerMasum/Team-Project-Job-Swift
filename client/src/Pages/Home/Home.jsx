@@ -7,6 +7,7 @@ import Hiring from "../../components/Home/Hiring/Hiring";
 import Banner from "../../components/Home/Banner/Banner";
 import Slider from "../../components/Home/Slider/Slider";
 import HrData from "../../components/Home/MarketPlaceIntegrate/HrData";
+import ReportCenter from "../../Components/ReportCenter/ReportCenter";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <Banner />
       <HrPlatform />
       <div className="mt-12">
-       <HrData/>
+        <HrData />
       </div>
 
       {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
@@ -38,8 +39,11 @@ const Home = () => {
         <h2 className="text-5xl font-bold text-center text-primary font-sans italic ">
           Why People LOVE JobSwift
         </h2>
-        <Slider /> 
+        <Slider />
         {/* slider addeed */}
+      </div>
+      <div className="mt-12 mb-12">
+        <ReportCenter/>
       </div>
     </div>
   );
