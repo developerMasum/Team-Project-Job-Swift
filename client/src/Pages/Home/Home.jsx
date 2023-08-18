@@ -14,11 +14,10 @@ const Home = () => {
       <HeadlineBar />
       <Banner />
       <HrPlatform />
-      <div className="mt-12">
+     <div className="md:px-12">
+     <div className="mt-12">
         <HrData />
       </div>
-
-      {/* important !!!  here please everyone render his section one by one from components-> home-> your section name  */}
 
       <div className="mt-12">
         <PaySection />
@@ -27,9 +26,10 @@ const Home = () => {
         <Hiring />
       </div>
 
-      <div className="mt-12 mb-5">
+      <div className="mt-16 mb-5">
         <EmployeeExperience />
       </div>
+     </div>
       <div className="mt-12 mb-12">
         <MarketPlaceIntegrate />
       </div>

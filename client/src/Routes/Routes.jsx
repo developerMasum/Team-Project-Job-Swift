@@ -15,6 +15,7 @@ import Demo from "../components/Dashboard/Demo/Demo";
 import Jobs from "../Pages/Dashboard/Jobs/Jobs";
 import { PostJob } from "../Pages/Dashboard/PostJob/PostJob";
 import ReportCenter from "../Components/ReportCenter/ReportCenter";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -67,7 +68,7 @@ const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <DashboardLayout />,
+    element:<PrivateRoute> <DashboardLayout /> </PrivateRoute>,
     children: [
       {
         path: "demo",
