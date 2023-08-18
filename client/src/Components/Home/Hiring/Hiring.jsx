@@ -16,7 +16,7 @@ const Hiring = () => {
           tasks, you can create a compelling candidate experience and better
           first days for new hires.
         </p>
-        <a href="#" className="">
+        <Link to="./hiring">
           <h4 className="text-primary font-bold text-base text-start md:text-start mt-2 md:mt-10 ">
             Learn More About Hiring & Onboarding{" "}
             <span>
@@ -24,7 +24,7 @@ const Hiring = () => {
               <FaChevronRight className="inline-block text-primary" />
             </span>
           </h4>
-        </a>
+        </Link>
       </div>
       <div className="mt-6 md:mt-0">
         <img src={hiringImage} className="w-96 h-auto rounded-2xl" alt="" />

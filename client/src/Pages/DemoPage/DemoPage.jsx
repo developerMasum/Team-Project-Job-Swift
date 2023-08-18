@@ -13,7 +13,7 @@ const DemoPage = () => {
       <div className="bg-image -rounded-b-xl p-20 md:flex justify-between items-center">
         <div className="space-y-5">
           <h1 className="font-extrabold text-4xl text-[#00673b]">
-            Get a demo of BambooHR.
+            Get a demo of Job Swift .
           </h1>
           <p>
             Job Swift is an easy-to-use platform of people-centered solutions to{" "}

@@ -18,7 +18,7 @@ const PayrollTimeBenefits = () => {
       <div className="text-center pt-16">
         <Title
           mainTitle="payroll-time-benefits"
-          subTitle="Bring your payroll and employee enrollment together in BambooHR."
+          subTitle="Bring your payroll and employee enrollment together in Job Swift ."
         />
       </div>
       <div className="md:flex md:flex-row-reverse  mx-auto justify-between items-center mt-8 gap-5 md:mt-16  md:0">
@@ -30,21 +30,25 @@ const PayrollTimeBenefits = () => {
             No double entry. No headaches.
           </h2>
           <p className="text-secondary text-justify text-lg leading-8">
-            BambooHR allows you to track hours worked, record time-off, manage
+            Job Swift allows you to track hours worked, record time-off, manage
             benefits, and run payroll all from a single platform. No more data
             double-entry and manual approval processes—just easy, accurate
             paydays for you and your employees.
           </p>
           <div className="flex pt-10 gap-10">
-            <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] transition ease-out duration-300">Get My Free Demo</button>
-            <button className="border-4 border-[#4C3293] px-7 py-3 rounded-full hover:bg-[#b4abca] transition ease-out duration-300 ">Try It Free</button>
+            <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] transition ease-out duration-300">
+              Get My Free Demo
+            </button>
+            <button className="border-4 border-[#4C3293] px-7 py-3 rounded-full hover:bg-[#b4abca] transition ease-out duration-300 ">
+              Try It Free
+            </button>
           </div>
         </div>
       </div>
       {/* 2nd part */}
       <div>
         <div className="text-center pt-16">
-          <Title mainTitle="Explore Payroll, Time, & Benefits with BambooHR" />
+          <Title mainTitle="Explore Payroll, Time, & Benefits with Job Swift " />
         </div>
       </div>
       <div className="px-10 text-secondary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pt-8">
@@ -109,7 +113,9 @@ const PayrollTimeBenefits = () => {
             "Bring all the pieces together in a single HRIS for flawlessly accurate paydays."
           }
         />
-        <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] mt-12 transition ease-out duration-300">Get My Free Demo</button>
+        <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 py-2 rounded-full hover:bg-[#3c1d94] mt-12 transition ease-out duration-300">
+          Get My Free Demo
+        </button>
       </div>
       <div className="md:flex items-center  gap-10">
         <div className="md:w-1/2">
@@ -119,14 +125,16 @@ const PayrollTimeBenefits = () => {
           <h2 className="text-2xl font-semibold text-[#4C3293]">
             “Every Tuesday I was tracking down information, having to beg
             managers to approve time, manually entering [data], adding up
-            numbers...it was a complete and utter headache. BambooHR easily
+            numbers...it was a complete and utter headache. Job Swift easily
             saves three to four hours per week.”
           </h2>
           <h2 className="text-xl font-bold text-secondary">
             AMY BOSTON, EMPLOYEE SUCCESS MANAGER | LIONHEART CRITICAL POWER
             SPECIALISTS
           </h2>
-          <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 transition ease-out duration-300 py-2 rounded-full hover:bg-[#3c1d94]">Read Amy’s Story</button>
+          <button className="bg-[#4C3293] border-4 border-[#4C3293] text-white font-bold px-6 transition ease-out duration-300 py-2 rounded-full hover:bg-[#3c1d94]">
+            Read Amy’s Story
+          </button>
         </div>
       </div>
 
@@ -144,13 +152,13 @@ const PayrollTimeBenefits = () => {
           <div className="space-y-5">
             <img src={payroll3} alt="" />
             <h2 className="font-semibold text-2xl">
-              Simplified Payroll and Time Tracking with BambooHR
+              Simplified Payroll and Time Tracking with Job Swift
             </h2>
             <p className="font-normal text-xl">
               Tired of researching and comparing? In this short webinar packed
               with information and first-hand customer stories, we’ll show you
-              how BambooHR makes the dream of all-in-one payroll, time tracking,
-              and benefits data a reality
+              how Job Swift makes the dream of all-in-one payroll, time
+              tracking, and benefits data a reality
             </p>
             <p className="flex gap-3 text-[17px] items-center font-semibold text-[#4C3293]">
               <Link>Watch the Webinar</Link> <FaChevronRight />{" "}
@@ -159,13 +167,13 @@ const PayrollTimeBenefits = () => {
           <div className="space-y-5">
             <img src={payroll4} alt="" />
             <h2 className="font-semibold text-2xl">
-              Simplified Payroll and Time Tracking with BambooHR
+              Simplified Payroll and Time Tracking with Job Swift
             </h2>
             <p className="font-normal text-xl">
               Tired of researching and comparing? In this short webinar packed
               with information and first-hand customer stories, we’ll show you
-              how BambooHR makes the dream of all-in-one payroll, time tracking,
-              and benefits data a reality
+              how Job Swift makes the dream of all-in-one payroll, time
+              tracking, and benefits data a reality
             </p>
             <p className="flex gap-3 text-[17px] items-center font-semibold text-[#4C3293]">
               <Link>Watch the Webinar</Link> <FaChevronRight />{" "}

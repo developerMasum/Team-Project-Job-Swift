@@ -7,8 +7,12 @@ import DetailsMarketPlaceIntegrate from "../Pages/DetailsMarketPlaceIntegrate/De
 import EmployeePerformance from "../Pages/EmployeePerformance/EmployeePerformance";
 import LearnMoreHrDataReporting from "../Pages/LearnMoreHrDataReporting/LearnMoreHrDataReporting";
 import PayrollTimeBenefits from "../Pages/PayrollTimeBenefits/PayrollTimeBenefits";
-import Jobs from "../Pages/Dashboard/Jobs/Jobs";
-import Demo from "../Pages/Dashboard/Jobs/Demo";
+import HiringOnboarding from "../Components/HiringOnboarding/HiringOnboarding";
+import DashboardLayout from "../Layouts/DashboardLayout";
+import LogIn from "../Pages/Auth/LogIn";
+import SignIn from "../Pages/Auth/SignIn";
+import Demo from "../components/Dashboard/Demo/Demo";
+
 
 const router = createBrowserRouter([
   {
@@ -24,8 +28,9 @@ const router = createBrowserRouter([
         path: "demo-page",
         element: <DemoPage></DemoPage>,
       },
+
       {
-        path: "details-marketplace",
+        path: "/details-marketplace",
         element: <DetailsMarketPlaceIntegrate />,
       },
       {
@@ -41,15 +46,30 @@ const router = createBrowserRouter([
         element: <PayrollTimeBenefits />,
       },
       {
-        path:'/jobs',
-        element:<Jobs />,
+        path: "/hiring",
+        element: <HiringOnboarding></HiringOnboarding>,
       },
-      // {
-      //   path:'/demo',
-      //   element:<Demo />
-      // }
+      {
+        path: '/login',
+        element: <LogIn />
+      },
+      {
+        path: '/register',
+        element: <SignIn />
+      }
+ 
     ],
   },
+  {
+    path: 'dashboard',
+    element: <DashboardLayout />,
+    children: [
+{
+  path: 'demo',
+  element: <Demo />
+}
+    ]
+  }
 ]);
 
 
