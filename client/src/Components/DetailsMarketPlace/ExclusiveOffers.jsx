@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaMedal, FaAngleRight } from "react-icons/fa";
 import eliteImg from "../../../src/assets/Image/elite-badge.svg";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ const ExclusiveOffers = () => {
   const exclusiveData = [
     {
       id: 1,
-      imageUrl: "../../../src/assets/Image/exclusive01.png",
+      imageUrl: "https://i.ibb.co/N3YfkKz/exclusive01.webp",
       name: "Human Interest",
       title: "Financial Benefits",
       description:
@@ -15,14 +15,14 @@ const ExclusiveOffers = () => {
     },
     {
       id: 2,
-      imageUrl: "../../../src/assets/Image/appsImg04.png",
+      imageUrl: "https://i.ibb.co/TLkXqYX/apps-Img04.webp",
       name: "Leapsome",
       title: "Performance",
       description: "Develop your people, scale your business.",
     },
     {
       id: 3,
-      imageUrl: "../../../src/assets/Image/exclusive03.png",
+      imageUrl: "https://i.ibb.co/Rv07QCd/exclusive03.webp",
       name: "Deputy",
       title: "Applicant Tracking & Scheduling",
       description:
@@ -30,7 +30,7 @@ const ExclusiveOffers = () => {
     },
     {
       id: 4,
-      imageUrl: "../../../src/assets/Image/appsImg01.png",
+      imageUrl: "https://i.ibb.co/6r2f1wz/apps-Img01.webp",
       name: "Checkr",
       title: "Background Checkr",
       description:
@@ -38,7 +38,7 @@ const ExclusiveOffers = () => {
     },
     {
       id: 5,
-      imageUrl: "../../../src/assets/Image/executive05.png",
+      imageUrl: "https://i.ibb.co/vw1VK9v/executive05.webp",
       name: "Deel",
       title: "Payroll, PEO, Global Payroll",
       description:
@@ -46,7 +46,7 @@ const ExclusiveOffers = () => {
     },
     {
       id: 6,
-      imageUrl: "../../../src/assets/Image/executive06.png",
+      imageUrl: "https://i.ibb.co/pfgD9Q3/executive06.webp",
       name: "Employee Cycle",
       title: "Reporting & Analytics",
       description:
@@ -54,52 +54,68 @@ const ExclusiveOffers = () => {
     },
   ];
 
+  const [hoveredId, setHoveredId] = useState(null);
+
   return (
-      <div className='my-20'>
-      <h2 className="text-2xl md:text-3xl font-bold my-4 p-2 text-gray-800">
-       Exclusive Offers
-     </h2>
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-     {exclusiveData.map((offer) => (
-       <div
-         key={offer.id}
-         className="relative bg-white border rounded-lg overflow-hidden group transition duration-300 p-4 hover:shadow-lg"
-       >
-         <img
-           src={offer.imageUrl}
-           alt={offer.name}
-           className="w-full h-48 object-cover transition duration-300 transform group-hover:scale-105"
-         />
-         <div className='flex justify-between items-center'>
-            <h1 className='text-xl font-semibold text-gray-500'>{offer.name}</h1>
-            <img src={eliteImg} alt="" />
-         </div>
-         <div className="p-4 bg-white bg-opacity-90 absolute bottom-0 w-full transition duration-300 transform translate-y-full group-hover:translate-y-0">
-           <div className="flex items-center mt-2">
-             <h1 className="text-xl font-semibold text-gray-700">
-               {offer.name}
-               <img src={eliteImg} alt="" className="ml-2" />
-             </h1>
-           </div>
-           <p className="text-gray-600">{offer.title}</p>
-           <p className="mt-2 text-sm text-gray-500">{offer.description}</p>
-           <div className="mt-4 flex justify-end">
-             <Link
-              to='/'
-               className="text-[#219438] font-medium hover:underline flex items-center transition duration-300 transform hover:translate-x-1"
-             >
-               Learn More
-               <FaAngleRight className="ml-1 text-[#219438] text-lg" />
-             </Link>
-           </div>
-         </div>
-         <div className="absolute top-2 right-2 bg-[#219438] text-white px-2 py-1 rounded-full text-xs font-semibold">
-           SPECIAL OFFER
-         </div>
-       </div>
-     ))}
-   </div>
-   </div>
+    <div className="container mx-auto py-12">
+      <h2 className="text-3xl font-bold text-gray-800 mb-8">Preferred Apps</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        {exclusiveData.map((offer) => (
+          <div
+            key={offer.id}
+            className="bg-white rounded-lg  border-[1px] border-green-200 p-6 transition-transform duration-300 transform hover:scale-105 relative overflow-hidden"
+            onMouseEnter={() => setHoveredId(offer.id)}
+            onMouseLeave={() => setHoveredId(null)}
+          >
+            <div
+              className={`transition-opacity duration-300 ${
+                hoveredId === offer.id ? "opacity-0" : "opacity-100"
+              }`}
+            >
+              <img
+                src={offer.imageUrl}
+                alt={offer.name}
+                className="w-full h-48 object-cover mb-4 rounded-md"
+              />
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {offer.name}
+                </h3>
+                <img src={eliteImg} alt="Elite Badge" className="w-10 h-10" />
+              </div>
+            </div>
+            <div
+              className={`transition-opacity duration-300 ${
+                hoveredId === offer.id ? "opacity-100" : "opacity-0"
+              } absolute inset-0 bg-white bg-opacity-90 flex flex-col justify-between p-6`}
+            >
+              <div>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {offer.name}
+                  </h3>
+                  <img src={eliteImg} alt="Elite Badge" className="w-6 h-6" />
+                </div>
+                <p className="text-gray-600 mb-2">{offer.title}</p>
+                <p className="text-gray-700">{offer.description}</p>
+              </div>
+              <div className="flex justify-end">
+                <Link
+                  to="/"
+                  className="text-green-500 font-semibold flex items-center transition-transform duration-300 hover:translate-x-1"
+                >
+                  Learn More
+                  <FaAngleRight className="ml-1 text-green-500" />
+                </Link>
+              </div>
+            </div>
+            <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+              SPECIAL OFFER
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const Solutions = () => {
         {integrationData.map((integration) => (
           <div
             key={integration.id}
-            className="flex items-center bg-white border rounded-lg p-4 shadow-sm hover:shadow-md cursor-pointer"
+            className="flex items-center bg-white border-[1px] border-green-200 rounded-t-lg p-4 shadow-sm hover:shadow-md cursor-pointer"
           >
             <integration.icon className="h-8 w-8 text-[#219438] mr-3" />
             <span className="text-gray-800 text-sm md:text-base">

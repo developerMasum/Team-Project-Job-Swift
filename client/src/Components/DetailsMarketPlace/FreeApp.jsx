@@ -7,7 +7,7 @@ const FreeApp = () => {
   const exclusiveData = [
     {
       id: 1,
-      imageUrl: "../../../src/assets/Image/freeApp01.jpeg",
+      imageUrl: "https://i.ibb.co/9Hg20B2/free-App01.webp",
       name: "JobSwift app for Slack",
       title: "Communication",
       description:
@@ -15,7 +15,7 @@ const FreeApp = () => {
     },
     {
       id: 2,
-      imageUrl: "../../../src/assets/Image/newIntre04.png",
+      imageUrl: "https://i.ibb.co/G28MdfW/new-Intre04.webp",
       name: "Microsoft Single Sign-On",
       title: "Identity Management",
       description:
@@ -23,7 +23,7 @@ const FreeApp = () => {
     },
     {
       id: 3,
-      imageUrl: "../../../src/assets/Image/freeApp03.png",
+      imageUrl: "https://i.ibb.co/nDLwJcG/free-App03.webp",
       name: "Indeed",
       title: "Job Boards & Sourcing",
       description:
@@ -31,7 +31,7 @@ const FreeApp = () => {
     },
     {
       id: 4,
-      imageUrl: "../../../src/assets/Image/freeApp04.jpeg",
+      imageUrl: "https://i.ibb.co/sgjHVrP/free-App04.webp",
       name: "SAML",
       title: "Identity Management",
       description:
@@ -39,7 +39,7 @@ const FreeApp = () => {
     },
     {
       id: 5,
-      imageUrl: "../../../src/assets/Image/freeApp05.png",
+      imageUrl: "https://i.ibb.co/HL8ZdD8/free-App05.webp",
       name: "Gifted",
       title: "Recognition & Rewards",
       description:
@@ -47,7 +47,7 @@ const FreeApp = () => {
     },
     {
       id: 6,
-      imageUrl: "../../../src/assets/Image/freeApp06.png",
+      imageUrl: "https://i.ibb.co/XFgpsj1/free-App06.webp",
       name: "Truework",
       title: "Employment Verification",
       description:
@@ -57,51 +57,60 @@ const FreeApp = () => {
   const [hoveredId, setHoveredId] = useState(null);
 
   return (
-    <div className="my-20">
-      <h2 className="text-2xl md:text-3xl font-bold my-4 p-2 text-gray-800">
-        Discover Free Apps
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="container mx-auto py-12">
+      <h2 className="text-3xl font-bold text-gray-800 mb-8">Preferred Apps</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {exclusiveData.map((offer) => (
           <div
             key={offer.id}
-            className="bg-white border rounded-lg shadow-md overflow-hidden transition duration-300 transform hover:scale-105"
+            className="bg-white rounded-lg  border-[1px] border-green-200 p-6 transition-transform duration-300 transform hover:scale-105 relative overflow-hidden"
             onMouseEnter={() => setHoveredId(offer.id)}
             onMouseLeave={() => setHoveredId(null)}
           >
-            <div className="relative">
+            <div
+              className={`transition-opacity duration-300 ${
+                hoveredId === offer.id ? "opacity-0" : "opacity-100"
+              }`}
+            >
               <img
                 src={offer.imageUrl}
                 alt={offer.name}
-                className="object-cover w-full h-48 rounded-t-lg"
+                className="w-full h-48 object-cover mb-4 rounded-md"
               />
-              <div className="absolute top-2 right-2 bg-[#219438] text-white px-2 py-1 rounded-full text-xs font-semibold">
-                SPECIAL OFFER
+              <div className="flex justify-between items-center mb-2">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {offer.name}
+                </h3>
+                <img src={eliteImg} alt="Elite Badge" className="w-10 h-10" />
               </div>
             </div>
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-700">
-                {offer.name}
-                <img src={eliteImg} alt="" className="w-5 h-5 ml-2 inline" />
-              </h3>
-              <p className="text-gray-600 mt-1">{offer.title}</p>
-              <div className="mt-3"></div>
-              <div
-                className={`text-sm text-gray-500 mt-3 transition-all duration-300 ${
-                  hoveredId === offer.id
-                    ? "opacity-100 h-auto"
-                    : "opacity-0 h-0"
-                }`}
-              >
-                {offer.description}
+            <div
+              className={`transition-opacity duration-300 ${
+                hoveredId === offer.id ? "opacity-100" : "opacity-0"
+              } absolute inset-0 bg-white bg-opacity-90 flex flex-col justify-between p-6`}
+            >
+              <div>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {offer.name}
+                  </h3>
+                  <img src={eliteImg} alt="Elite Badge" className="w-6 h-6" />
+                </div>
+                <p className="text-gray-600 mb-2">{offer.title}</p>
+                <p className="text-gray-700">{offer.description}</p>
               </div>
-              <a
-                href="/"
-                className="text-[#219438] hover:underline flex items-center transition duration-300 transform hover:translate-x-1"
-              >
-                Learn More
-                <FaAngleRight className="ml-1 text-[#219438] text-lg" />
-              </a>
+              <div className="flex justify-end">
+                <Link
+                  to="/"
+                  className="text-green-500 font-semibold flex items-center transition-transform duration-300 hover:translate-x-1"
+                >
+                  Learn More
+                  <FaAngleRight className="ml-1 text-green-500" />
+                </Link>
+              </div>
+            </div>
+            <div className="absolute top-2 right-2 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-semibold">
+              SPECIAL OFFER
             </div>
           </div>
         ))}
