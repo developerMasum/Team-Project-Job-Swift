@@ -11,10 +11,23 @@ import { useContext } from "react";
 import { authContext } from "../../../Auth/AuthProvider";
 
 const UpperBar = () => {
-  const { user } = useContext(authContext);
+
+  const { user, logout } = useContext(authContext)
   const name = user?.displayName || "Mr X man";
   const userName = user?.email || "mm123";
   const userImage = user?.photoURL || userBackupImage;
+
+  // console.log(user);
+  // console.log(cart);
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        alert("Successfully LogOut")
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }
 
   return (
     <>
@@ -276,9 +289,24 @@ const UpperBar = () => {
                   <li>
                     <Link>Add Company</Link>
                   </li>
-                  <li>
-                    <Link>Logout</Link>
-                  </li>
+                  {
+                    user &&
+                    <>
+                      <li onClick={handleLogOut} className='btn btn-outline btn-sm btn-error ml-3'>
+                        Log-out
+                      </li>
+
+                    </>
+
+                    // <>
+                    //   {/* <li><Link to='/login'>LogIn</Link></li> */}
+                    //   <Link to={'/login'}>
+                    //     <button className="  btn btn-outline text-green-600 font-bold btn-sm hidden md:block">
+                    //       Log In
+                    //     </button>
+                    //   </Link>
+                    // </>
+                  }
                 </div>
               </ul>
             </div>
