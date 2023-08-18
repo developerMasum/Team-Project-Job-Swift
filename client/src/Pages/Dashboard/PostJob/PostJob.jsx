@@ -1,7 +1,8 @@
 import React from "react";
-import Heading from "../../Components/PostJob/Heading";
+
 import { useForm } from "react-hook-form";
 import { FiAlertCircle } from "react-icons/fi";
+import Heading from "../../../Components/Dashboard/PostJob/Heading";
 import {
   companyTypes,
   currencies,
@@ -10,7 +11,7 @@ import {
   keywordOptions,
   employmentTypes,
   experienceLevels,
-} from "../../utlis/data";
+} from "../../../Components/Dashboard/UtilsJobPost/data";
 
 export const PostJob = () => {
   const {
@@ -23,7 +24,7 @@ export const PostJob = () => {
     console.log(data);
   };
   return (
-    <div>
+    <div className="pt-20">
       <Heading></Heading>
       <div className="md:flex justify-between items-center my-10">
         <div className=" w-full md:w-9/12 rounded-lg">
@@ -155,7 +156,7 @@ export const PostJob = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 p-2">
+                <div className="bg-gray-50 p-2 text-gray-900">
                   <h3 className="text-xl font-bold">
                     Company industry and Job function
                   </h3>
@@ -163,7 +164,7 @@ export const PostJob = () => {
 
                 {/* start  */}
 
-                <div className="md:flex justify-between gap-3 my-2">
+                <div className="md:flex justify-between gap-3 my-2 text-gray-700">
                   <div className="mb-4 w-full">
                     <h3 className="text-lg font-semibold mb-2 flex items-center">
                       Company type
@@ -220,16 +221,16 @@ export const PostJob = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 p-2">
+                <div className="bg-gray-50 p-2 text-gray-900">
                   <h3 className="text-xl font-bold">Employment Details</h3>
                 </div>
 
                 {/* start here  */}
 
-                <div className="p-6">
+                <div className="p-6 text-gray-700">
                   <div className="md:flex justify-between gap-3 my-2">
                     <div className="mb-4 w-full">
-                      <h3 className="text-lg font-semibold mb-2 flex items-center">
+                      <h3 className="text-lg font-semibold mb-2 flex items-center ">
                         Employment Type
                         <FiAlertCircle className="ml-2 text-red-500" />
                       </h3>
@@ -341,13 +342,13 @@ export const PostJob = () => {
                   </div>
                 </div>
                 {/* start here  */}
-                <div className="bg-gray-50 p-2">
-                  <h3 className="text-xl font-bold">Annual salary</h3>
+                <div className="bg-gray-50 p-2 text-gray-700">
+                  <h3 className="text-xl font-semibold">Annual salary</h3>
                 </div>
 
                 {/* start currency  */}
 
-                <div className="mb-4 flex">
+                <div className="mb-4 flex text-gray-900">
                   <div className="w-1/3 pr-2">
                     <label
                       htmlFor="salaryFrom"
@@ -356,7 +357,7 @@ export const PostJob = () => {
                       From
                     </label>
                     <input
-                      type="text"
+                      type="number"
                       name="salaryFrom"
                       {...register("salaryFrom")}
                       className="w-full px-4 py-2 border rounded"
@@ -370,7 +371,7 @@ export const PostJob = () => {
                       To
                     </label>
                     <input
-                      type="text"
+                      type="number"
                       name="salaryTo"
                       {...register("salaryTo")}
                       className="w-full px-4 py-2 border rounded"
@@ -409,14 +410,17 @@ export const PostJob = () => {
                 </div>
 
                 <div>
-                <div className="space-x-4">
-          <button type="submit" className="bg-[#1F7068] text-white outline-none px-4 py-1 rounded-md text-[20px] font-medium">
-            Save draft
-          </button>
-          <button className="border-[1px] border-[#1F7068] outline-none px-4 py-1 rounded-md text-[20px] font-semibold">
-            Save & continue
-          </button>
-        </div>
+                  <div className="space-x-4">
+                    <button
+                      type="submit"
+                      className="bg-[#1F7068] text-white outline-none px-4 py-1 rounded-md text-[20px] font-medium"
+                    >
+                      Save draft
+                    </button>
+                    <button className="border-[1px] border-[#1F7068] outline-none px-4 py-1 rounded-md text-[20px] font-semibold">
+                      Save & continue
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -430,22 +434,27 @@ export const PostJob = () => {
               eg: 'Nurse', not 'nurses' No general opportunities or events
             </p>
             <div className="space-y-140">
-              <p className="my-36">Use a location to attract the most appropriate candidates</p>
+              <p className="my-36">
+                Use a location to attract the most appropriate candidates
+              </p>
               <p className="my-36">
                 If you tick the "fully remote" box, still add at least a
                 country. Some job boards require a location
               </p>
             </div>
             <div>
-            <p>
-              Include the industry and function to boost the job’s visibility on
-              some job boards
-            </p>
-            <p className="my-36">
-              Include as many details as possible to boost the job’s performance
-              on some job boards
-            </p>
-            <p>Adding the salary here will improve performance on some job boards. You can also include the salary in the job description</p>
+              <p>
+                Include the industry and function to boost the job’s visibility
+                on some job boards
+              </p>
+              <p className="my-36">
+                Include as many details as possible to boost the job’s
+                performance on some job boards
+              </p>
+              <p>
+                Adding the salary here will improve performance on some job
+                boards. You can also include the salary in the job description
+              </p>
             </div>
           </div>
         </div>
