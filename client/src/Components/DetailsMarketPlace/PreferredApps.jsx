@@ -9,7 +9,7 @@ const PreferredApps = () => {
   const appsData = [
     {
       id: 1,
-      imageUrl: "../../../src/assets/Image/appsImg01.png",
+      imageUrl: "https://www.bamboohr.com/integrations/listings/media_193da12cfb3c3cf60dab532d09832ccca52e02fa4.png?width=750&format=webply&optimize=medium",
       name: "Checkr",
       title: "Background Checks",
       description:
@@ -17,7 +17,7 @@ const PreferredApps = () => {
     },
     {
       id: 2,
-      imageUrl: "../../../src/assets/Image/appsImg02.jpeg",
+      imageUrl: "https://www.bamboohr.com/integrations/listings/media_199ef26087c27b94e24ff490c3858fe00081d1af1.jpeg?width=750&format=webply&optimize=medium",
       name: "Lattice",
       title: "Performance",
       description: "Develop engaged and high-performing teams with Lattice",
