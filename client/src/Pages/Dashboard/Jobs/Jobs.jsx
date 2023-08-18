@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowDown,MdClear } from "react-icons/md";
+import { MdKeyboardArrowDown, MdClear } from "react-icons/md";
 import { LuEdit } from "react-icons/lu";
 import triangle from "../../../assets/Image/triangles4-1.svg";
 import PostJobs from "./PostJobs";
@@ -16,7 +16,7 @@ const Jobs = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isJobs, setJobs] = useState([]);
   useEffect(() => {
-    fetch("../../../../public/Jobs.json")
+    fetch("/Jobs.json")
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);
@@ -36,11 +36,11 @@ const Jobs = () => {
           </div>
           <div>
             <Link to='post-job'>
-            <button className="bg-[#00756a] border-2 border-[#00756a] px-5 py-2 rounded-lg text-white font-medium hover:bg-[#005f56] hover:border-[#005f56] transition-colors 3s ease-in-out">
-              Create a new job
-            </button>
+              <button className="bg-[#00756a] border-2 border-[#00756a] px-5 py-2 rounded-lg text-white font-medium hover:bg-[#005f56] hover:border-[#005f56] transition-colors 3s ease-in-out">
+                Create a new job
+              </button>
             </Link>
-            
+
           </div>
         </div>
       </div>
@@ -130,11 +130,11 @@ const Jobs = () => {
             and choose to publish on the most popular free and premium job
             boards.
           </p>
-        <Link to='post-job'>
-        <button className=" text-[#00756a] px-5 py-1 border border-[#00756a] rounded-lg hover:bg-[#ffffdd] transition-colors 3s ease-in-out font-medium">
-            Post a job
-          </button>
-        </Link>
+          <Link to='post-job'>
+            <button className=" text-[#00756a] px-5 py-1 border border-[#00756a] rounded-lg hover:bg-[#ffffdd] transition-colors 3s ease-in-out font-medium">
+              Post a job
+            </button>
+          </Link>
         </div>
         <div className="w-[280px] h-full">
           <img src={triangle} alt="" />

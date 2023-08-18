@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../../Auth/AuthProvider";
 import logo from "../../assets/logo/logo3.png";
+import SocialLogIn from "./SocialLogIn";
 
 const LogIn = () => {
   const {
@@ -24,7 +25,7 @@ const LogIn = () => {
   const onSubmit = (data) => {
     // console.log(data)
     // console.log(data.password)
-    
+
     const email = data.email;
     const password = data.password;
     console.log(email, password);
@@ -127,13 +128,14 @@ const LogIn = () => {
               className="input input-bordered btn btn-outline"
             />
           </div>
+          <SocialLogIn></SocialLogIn>
         </form>
       </div>
       <div className="flex  items-center text-xs mt-0 ml-3  ">
         <Link to={'/'} className="flex justify-center items-center gap-1 font-bold">
           <FaArrowLeft />
-          Home 
-        </Link> 
+          Home
+        </Link>
         <span className="text-2xl mr-2 ml-2">·</span>
         <span className="font-bold" >  Term and Conditions </span>
       </div>
