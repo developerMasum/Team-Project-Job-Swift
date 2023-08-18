@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { authContext } from "../../../Auth/AuthProvider";
 
 const UpperBar = () => {
+
   const { user,logout } = useContext(authContext);
   const name = user?.displayName || "Mr X man";
   const userName = user?.email || "mm123";
@@ -22,6 +23,18 @@ const UpperBar = () => {
       .then(() => {
         alert("Successfully LogOut")
         navigate('/');
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }
+
+  // console.log(user);
+  // console.log(cart);
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        alert("Successfully LogOut")
       })
       .catch(error => {
         console.log(error);
