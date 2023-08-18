@@ -24,6 +24,7 @@ const LogIn = () => {
   const onSubmit = (data) => {
     // console.log(data)
     // console.log(data.password)
+    
     const email = data.email;
     const password = data.password;
     console.log(email, password);

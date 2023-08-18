@@ -130,9 +130,11 @@ const Jobs = () => {
             and choose to publish on the most popular free and premium job
             boards.
           </p>
-          <button className=" text-[#00756a] px-5 py-1 border border-[#00756a] rounded-lg hover:bg-[#ffffdd] transition-colors 3s ease-in-out font-medium">
+        <Link to='post-job'>
+        <button className=" text-[#00756a] px-5 py-1 border border-[#00756a] rounded-lg hover:bg-[#ffffdd] transition-colors 3s ease-in-out font-medium">
             Post a job
           </button>
+        </Link>
         </div>
         <div className="w-[280px] h-full">
           <img src={triangle} alt="" />

@@ -17,8 +17,8 @@ const EmployeeExperience = () => {
         </p>
         <Link to="/employee-experience" className="">
           <h3 className="text-primary font-bold text-base text-start md:text-start mt-2 md:mt-8 ">
-            Learn About Employee Experience & Performance
-            <span className="ml-2">
+            Learn Employee Experience & Performance
+            <span className="ml-1">
               <FaChevronRight className="inline-block text-primary" />
             </span>
           </h3>
