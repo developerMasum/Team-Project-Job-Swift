@@ -7,6 +7,7 @@ import Hiring from "../../components/Home/Hiring/Hiring";
 import Banner from "../../components/Home/Banner/Banner";
 import Slider from "../../components/Home/Slider/Slider";
 import HrData from "../../components/Home/MarketPlaceIntegrate/HrData";
+import ReportCenter from "../../Components/ReportCenter/ReportCenter";
 
 const Home = () => {
   return (
@@ -40,6 +41,9 @@ const Home = () => {
         </h2>
         <Slider />
         {/* slider addeed */}
+      </div>
+      <div className="mt-12 mb-12">
+        <ReportCenter/>
       </div>
     </div>
   );
