@@ -17,16 +17,16 @@ const UpperBar = () => {
   const userImage = user?.photoURL || userBackupImage;
   const navigate = useNavigate();
 
-  // const handleLogOut = () => {
-  //   logout()
-  //     .then(() => {
-  //       alert("Successfully LogOut")
-  //       navigate('/');
-  //     })
-  //     .catch(error => {
-  //       console.log(error);
-  //     })
-  // }
+  const handleLogOut = () => {
+    logout()
+      .then(() => {
+        alert("Successfully LogOut")
+        navigate('/');
+      })
+      .catch(error => {
+        console.log(error);
+      })
+  }
 
   return (
     <>
