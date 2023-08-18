@@ -12,7 +12,7 @@ import DashboardLayout from "../Layouts/DashboardLayout";
 import LogIn from "../Pages/Auth/LogIn";
 import SignIn from "../Pages/Auth/SignIn";
 import Demo from "../components/Dashboard/Demo/Demo";
-
+import Jobs from "../Pages/Dashboard/Jobs/Jobs";
 
 const router = createBrowserRouter([
   {
@@ -50,27 +50,29 @@ const router = createBrowserRouter([
         element: <HiringOnboarding></HiringOnboarding>,
       },
       {
-        path: '/login',
-        element: <LogIn />
+        path: "/login",
+        element: <LogIn />,
       },
       {
-        path: '/register',
-        element: <SignIn />
-      }
- 
+        path: "/register",
+        element: <SignIn />,
+      },
     ],
   },
   {
-    path: 'dashboard',
+    path: "dashboard",
     element: <DashboardLayout />,
     children: [
-{
-  path: 'demo',
-  element: <Demo />
-}
-    ]
-  }
+      {
+        path: "demo",
+        element: <Demo />
+      },
+      {
+        path:"jobs",
+        element:<Jobs />
+      }
+    ],
+  },
 ]);
-
 
 export default router;

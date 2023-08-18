@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Demo = () => {
+const Sss = () => {
     return (
         <div>
             <div className="">
@@ -42,7 +42,7 @@ const Demo = () => {
     );
 };
 
-export default Demo;
+export default Sss;
 
 
 // {

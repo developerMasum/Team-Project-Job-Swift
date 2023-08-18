@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown,MdClear } from "react-icons/md";
+import { LuEdit } from "react-icons/lu";
 import triangle from "../../../assets/Image/triangles4-1.svg";
 import PostJobs from "./PostJobs";
-import "./Jobs.css";
 import icons1 from "../../../assets/Image/jobsicon1.png";
 import icons2 from "../../../assets/Image/jobsicons.png";
 import icons3 from "../../../assets/Image/josbicns3.png";
@@ -25,16 +25,30 @@ const Jobs = () => {
       );
   }, []);
   return (
-    <div className="">
+    <div className="pt-[70px] max-w-7xl mx-auto">
       {/* Down nav */}
-      <div className="flex justify-end pr-16">
+      <div className="md:px-8 w-full px-4 bg-white shadow-md py-4 mb-5">
+        <div className="flex justify-between">
+          <div className="flex items-center gap-1">
+            <h2 className="text-3xl">MD MASUM</h2>
+            <LuEdit className="h-4 w-4 text-gray-500" />
+          </div>
+          <div>
+            <button className="bg-[#00756a] border-2 border-[#00756a] px-5 py-2 rounded-lg text-white font-medium hover:bg-[#005f56] hover:border-[#005f56] transition-colors 3s ease-in-out">
+              Create a new job
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Dropdown */}
+      <div className="flex justify-end pr-16 ">
         <div className="relative z-50">
           <button
             onClick={() => {
               setFirstOpen(!isFirstOpen);
               if (isSecondOpen) setSecondOpen(false);
             }}
-            className="px-4 hover:underline flex gap-1 items-center py-2 text-secondary"
+            className="px-4 font-medium hover:underline flex gap-1 items-center py-2 text-secondary"
           >
             All Location
             <span>
@@ -74,7 +88,7 @@ const Jobs = () => {
               setSecondOpen(!isSecondOpen);
               if (isFirstOpen) setFirstOpen(false);
             }}
-            className="flex gap-1 hover:underline items-center py-2 text-secondary"
+            className="flex font-medium gap-1 hover:underline items-center py-2 text-secondary"
           >
             No group applied
             <span>
@@ -124,9 +138,9 @@ const Jobs = () => {
       {/* Previous post */}
 
       <div className="pt-10">
-        <div className="flex items-center text-sm font-semibold text-secondary justify-between">
-          <p>SAMPLE JOBS</p>
-          <p>Delete sample data</p>
+        <div className="flex items-center justify-between">
+          <p className="text-xs font-bold text-secondary ">SAMPLE JOBS</p>
+          <p className="text-xs font-bold text-secondary ">Delete sample data</p>
         </div>
         <div className="">
           {isJobs.map((jobs) => (
@@ -170,11 +184,11 @@ const Jobs = () => {
             <h2 className=" text-xs font-bold text-secondary">
               SUGGESTED ACTIONS
             </h2>
-            <h2 text-xs font-bold text-secondary>
+            <h2 className=" text-xs font-bold text-secondary hover:underline">
               Don't show again
             </h2>
           </div>
-          <div className="px-5 mx-auto grid grid-cols-3 gap-7">
+          <div className="px-5 mx-auto pb-20 grid grid-cols-3 gap-7">
             <div className="flex">
               <div className="space-y-3">
                 <h4 className="font-semibold">Work as a team</h4>
