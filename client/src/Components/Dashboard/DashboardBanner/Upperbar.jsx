@@ -119,7 +119,7 @@ const UpperBar = () => {
         <div className="font-bold hidden lg:md:flex ">
           <ul className="menu menu-horizontal px-1  text-white">
             <li>
-              <Link>JOBS</Link>
+              <Link to={'jobs'}>JOBS</Link>
             </li>
             <li>
               <Link>CANDIDATES</Link>

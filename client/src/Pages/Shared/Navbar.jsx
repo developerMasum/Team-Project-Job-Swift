@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
   const { user, logout } = useContext(authContext)
-  console.log(user);
+  // console.log(user);
   // console.log(cart);
   const handleLogOut = () => {
     logout()
@@ -181,7 +181,7 @@ const Navbar = () => {
           </Link> */}
 {
   user? <>
-  <Link to={'/dashboard'}>
+  <Link to={'/dashboard/jobs'}>
   <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
      Dashboard
      </button>
