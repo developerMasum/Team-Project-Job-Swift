@@ -6,9 +6,9 @@ import OthersReports from "./OthersReports";
 const ReportCenter = () => {
   return (
     <div>
-      <div className="text-center">
-        <h3 className=" text-4xl font-semibold">Report Center</h3>
-        <p className="text-[20px] font-semibold my-4">
+      <div className="text-center pt-20">
+        <h3 className=" text-4xl font-thin">Report Center</h3>
+        <p className="text-[20px] font-thin my-4">
           Understand the data that drives your hiring.
         </p>
         <p>

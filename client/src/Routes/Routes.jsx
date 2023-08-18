@@ -13,6 +13,7 @@ import Demo from "../components/Dashboard/Demo/Demo";
 import LogIn from "../Pages/Auth/LogIn";
 import SignIn from "../Pages/Auth/SignIn";
 import { PostJob } from "../Pages/Dashboard/PostJob/PostJob";
+import ReportCenter from "../Components/ReportCenter/ReportCenter";
 
 
 
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
 {
   path:'post-job',
   element:<PostJob></PostJob>
+  
+},
+{
+  path:'report-center',
+  element: <ReportCenter />
   
 }
     ]

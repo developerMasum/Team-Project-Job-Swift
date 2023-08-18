@@ -138,7 +138,7 @@ const UpperBar = () => {
               </div>
             </li>
             <li className="relative group">
-              <Link>
+              <Link to={'report-center'}>
                 <BsPieChart className="text-[17px]"></BsPieChart>
               </Link>
               <div className="opacity-0 rounded-md absolute top-14 right-0 bg-slate-600 text-white  pointer-events-none group-hover:opacity-100">
