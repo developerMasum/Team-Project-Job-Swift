@@ -13,6 +13,9 @@ import { authContext } from "../../../Auth/AuthProvider";
 const UpperBar = () => {
 
   const { user,logout } = useContext(authContext);
+
+
+
   const name = user?.displayName || "Mr X man";
   const userName = user?.email || "mm123";
   const userImage = user?.photoURL || userBackupImage;
