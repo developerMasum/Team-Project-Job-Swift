@@ -33,7 +33,7 @@ const Navbar = () => {
       <li>
         <Link>Resources</Link>
       </li>
-      
+
       <li>
         <Link>About</Link>
       </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-200 rounded-box w-72"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-200 rounded-box w-80"
             >
               {navLink}
 
@@ -95,12 +95,12 @@ const Navbar = () => {
               </div>
 
               <div className="flex gap-6 justify-center items-center mr-8">
-                <button className="btn btn-outline text-green-600 font-bold btn-sm my-3 w-1/3">
+                <Link to={`/login`} className="btn btn-outline text-green-600 font-bold btn-sm my-3 w-1/3">
                   Log In
-                </button>
-                <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 my-3 w-1/2">
+                </Link>
+                <Link to={'/demo-page'} className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 my-3 w-1/2">
                   Get a Demo
-                </button>
+                </Link>
               </div>
             </ul>
           </div>
@@ -147,7 +147,7 @@ const Navbar = () => {
             </div>
           </div>
 
-      
+
 
 
 
@@ -179,19 +179,19 @@ const Navbar = () => {
               Log In
             </button>
           </Link> */}
-{
-  user? <>
-  <Link to={'/dashboard/jobs'}>
-  <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
-     Dashboard
-     </button>
-  </Link> </> : <> 
-       <Link to={'/demo-page'}>
-       <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
-            Get a Demo
-          </button>
-       </Link></>
-}
+          {
+            user ? <>
+              <Link to={'/dashboard/jobs'}>
+                <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
+                  Dashboard
+                </button>
+              </Link> </> : <>
+              <Link to={'/demo-page'}>
+                <button className="btn btn-outline  bg-green-500 btn-sm mt-4 lg:md:mt-0 hidden md:block">
+                  Get a Demo
+                </button>
+              </Link></>
+          }
         </div>
       </div>
     </>
