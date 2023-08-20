@@ -12,16 +12,28 @@ import {
   employmentTypes,
   experienceLevels,
 } from "../../../Components/Dashboard/UtilsJobPost/data";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { createJobPost } from "../../../redux/jobSlice";
+import { toast } from "react-hot-toast";
 
 export const PostJob = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    try {
+      await dispatch(createJobPost(data));
+      toast.success("Successfully post your job !");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
   return (
     <div className="pt-20">
@@ -411,13 +423,13 @@ export const PostJob = () => {
 
                 <div>
                   <div className="space-x-4">
-                    <button
-                      type="submit"
-                      className="bg-[#1F7068] text-white outline-none px-4 py-1 rounded-md text-[20px] font-medium"
-                    >
+                    <button className="bg-[#1F7068] text-white outline-none px-4 py-1 rounded-md text-[20px] font-medium">
                       Save draft
                     </button>
-                    <button className="border-[1px] border-[#1F7068] outline-none px-4 py-1 rounded-md text-[20px] font-semibold">
+                    <button
+                      type="submit"
+                      className="border-[1px] border-[#1F7068] outline-none px-4 py-1 rounded-md text-[20px] font-semibold"
+                    >
                       Save & continue
                     </button>
                   </div>

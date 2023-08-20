@@ -32,6 +32,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     const UserCollection = client.db('JobSwiftDb').collection('users')
+    const jobPostCollection = client.db('JobSwiftDb').collection('posts')
 
 // app.put('/users',async(req,res)=>{
 //   const query = req.
@@ -47,12 +48,17 @@ app.post('/user',async(req,res)=>{
 
 
     // get users data  info 
-app.get('/usersData',async(req,res)=>{
+app.get('/users',async(req,res)=>{
   const result = await UserCollection.find().toArray()
   res.send(result)
 
 })
-
+// post a new job
+app.post('/job_post',async(req,res)=>{
+  const query = req.body;
+  const result = await jobPostCollection.insertOne(query)
+  res.send(result)
+})
 
     // Send a ping to confirm a successful connection
     await client.db('admin').command({ ping: 1 })

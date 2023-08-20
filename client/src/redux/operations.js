@@ -14,7 +14,18 @@ export const createUser = createAsyncThunk('createUser', async (data, { rejectWi
   
  export const getUsers = createAsyncThunk('getUsers', async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://localhost:5000/jobs');
+      const response = await axios.get('http://localhost:5000/users');
+      return response.data; // Return the data received from the server if needed
+    } catch (error) {
+      // Return the error payload using rejectWithValue
+      return rejectWithValue(error.response.data);
+    }
+  });
+
+  // post a job 
+  export const createJobPost = createAsyncThunk('createJobPost', async (data, { rejectWithValue }) => {
+    try {
+      const response = await axios.post('http://localhost:5000/job_post', data);
       return response.data; // Return the data received from the server if needed
     } catch (error) {
       // Return the error payload using rejectWithValue
