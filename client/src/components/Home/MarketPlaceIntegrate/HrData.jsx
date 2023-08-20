@@ -4,7 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 const HrData = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0 md:mr-96 items-center justify-items-start">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 px-10 md:px-0 md:mr-80 items-center justify-items-start">
       <div className="">
         <h3 className="text-primary md:text-2xl font-bold text-xl text-center md:text-start mb-2">
           HR Data & Reporting
